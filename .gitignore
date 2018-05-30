@@ -4,3 +4,4 @@ voice/
 vendor/
 .idea/
 test.php
+composer.phar

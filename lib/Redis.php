@@ -1,5 +1,5 @@
 <?php
-require 'credis/Client.php';
+require __DIR__.'/../vendor/colinmollenhour/credis/Client.php';
 
 if(!function_exists("redis")){
 	function redis(){

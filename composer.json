@@ -7,7 +7,8 @@
     }
   ],
   "require": {
-    "zloesabo/speechkit-php": "^2.0"
+    "zloesabo/speechkit-php": "^2.0",
+    "colinmollenhour/credis": "*"
   },
   "autoload": {
     "psr-4": {
