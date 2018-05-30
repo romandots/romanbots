@@ -157,4 +157,15 @@ abstract class Command {
 		$this->bot->reply($message);
 	}
 
+
+	/**
+	 * Get list of active commands classes
+	 * @return array
+	 */
+	static function list(){
+		return include BOT_BASE_DIRECTORY."/commands.php";
+	}
+
+
+
 }
