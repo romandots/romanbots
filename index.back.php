@@ -9,7 +9,7 @@ require_once 'global.php';
 require_once 'api/vk_api.php';
 require_once 'api/yandex_api.php';
 
-require_once 'bot/bot.php';
+require_once 'bot/bot.example.php';
 
 if ( !isset( $_REQUEST ) )
 {

@@ -1,7 +1,12 @@
 <?php
 
+namespace RomanBots\Bot;
+
+use RomanBots\Commands\Command;
 
 class Bot {
+
+	use BotHandleEvents, BotCommands;
 
 	protected $vkApiToken;
 	protected $vkCommunityConfirmationCode;
@@ -15,11 +20,10 @@ class Bot {
 	const BOT_AUDIO_DIRECTORY = BOT_AUDIO_DIRECTORY;
 	const BOT_VOICE_DIRECTORY = BOT_VOICE_DIRECTORY;
 
-	const EVENT_CONFIRMATION = 'confirmation';
-	const EVENT_MESSAGE_NEW = 'message_new';
-
 	public $userId;
 	public $userData;
+	public $userMessage;
+	protected $commandInProgress;
 
 	/**
 	 * Bot constructor.
@@ -46,92 +50,6 @@ class Bot {
 	}
 
 
-	/**
-	 * Find command in text and execute it
-	 * @param $message string
-	 * @return bool|string
-	 */
-	public function parseCommand($message){
-		$commands = require("commands.php");
-		log_msg("Looking up for commands in text...");
-		foreach ($commands as $command => $regexp ){
-			log_msg("Testing message `$message` on regular exp `/^$regexp$/i` for command `$command`");
-			if(preg_match("/^$regexp$/i", mb_strtolower($message),$matches)){
-				array_shift($matches);
-				debug($matches, "Matches found:");
-				return Tansultant::command($command, $matches, $this->userData);
-			}
-		}
-		return false;
-	}
-
-
-	/**
-	 * Handle new incoming chat message
-	 * @param $data object
-	 */
-	public function handleMessageNew($data)
-	{
-		if(!property_exists($data, "object") || !property_exists($data->object, "body")){
-			log_error('$data->object->body not exists');
-			die('Empty message passed');
-		}
-		$message = $data->object->body;
-		$sender = $this->getSenderData($data->object);
-
-		if( $commandExecuted = $this->parseCommand($message) ) {
-			$this->reply($commandExecuted);
-		} else {
-			$this->replyRandomly($message, $sender);
-		}
-		$this->ok();
-	}
-
-
-	/**
-	 * Return secret token
-	 * when VK asks
-	 * for authorization
-	 */
-	public function handleConfirmation()
-	{
-		$this->response( $this->vkCommunityConfirmationCode );
-	}
-
-
-	/**
-	 * Handle incoming callback event
-	 * @link  https://vk.com/dev/callback_api
-	 * @param $event object
-	 */
-	public function handleEvent( $event )
-	{
-		try
-		{
-			if(! is_object($event) ) {
-				$this->response( 'Unsupported event' );
-			}
-			switch ( $event->type )
-			{
-				//Подтверждение сервера
-				case self::EVENT_CONFIRMATION:
-					$this->handleConfirmation();
-					break;
-
-				//Получение нового сообщения
-				case self::EVENT_MESSAGE_NEW:
-					$this->handleMessageNew($event);
-					break;
-
-				default:
-					$this->response( 'Unsupported event' );
-					break;
-			}
-		} catch ( Exception $e )
-		{
-			log_error( $e );
-		}
-	}
 
 
 	/**
@@ -263,10 +181,10 @@ class Bot {
 	 */
 	protected function response( $data )
 	{
+		header("HTTP/1.1 200 OK");
 		echo $data;
 		exit();
 	}
-
 
 
 	/**
@@ -306,6 +224,7 @@ class Bot {
 	}
 
 
+
 	/**
 	 * Check the secret signature
 	 * @param $response
@@ -320,4 +239,6 @@ class Bot {
 		}
 		return true;
 	}
+
+
 }

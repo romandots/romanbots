@@ -7,6 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'SpeechKit\\' => array($vendorDir . '/zloesabo/speechkit-php/src'),
+    'RomanBots\\Commands\\' => array($baseDir . '/commands'),
+    'RomanBots\\Bot\\' => array($baseDir . '/bot'),
+    'RomanBots\\' => array('/'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
 );

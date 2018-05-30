@@ -1,0 +1,7 @@
+logs/
+audio/
+voice/
+vendor/
+.idea/
+.gitignore
+test.php

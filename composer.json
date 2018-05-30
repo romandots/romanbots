@@ -1,8 +1,8 @@
 {
-  "name": "romandots/vkbot",
+  "name": "romandots/romanbots",
   "authors": [
     {
-      "name": "romandots",
+      "name": "Roman Dots",
       "email": "ram.d.kreiz@gmail.com"
     }
   ],
@@ -10,11 +10,14 @@
     "zloesabo/speechkit-php": "^2.0"
   },
   "autoload": {
+    "psr-4": {
+      "RomanBots\\": "/",
+      "RomanBots\\Bot\\": "bot/",
+      "RomanBots\\Commands\\": "commands/"
+    },
     "files": [
       "global.php",
-      "config.php",
-      "Tansultant.php",
-      "Bot.php"
+      "config.php"
     ]
   }
 }

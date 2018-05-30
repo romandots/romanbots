@@ -1,2246 +1,770 @@
-06:12:05 [parseCommand] : [INFO] Parsing command in замороз 124
-06:12:05 [parseCommand] : [INFO] Testing regular exp `/^(заморо\S+)\D*(\d+)/i` for command `pause`
-06:12:05 [parseCommand] : === Matches found:: ===
-
-06:12:05 [parseCommand] : Array
-(
-    [0] => замороз 124
-    [1] => замороз
-    [2] => 124
-)
-
-06:12:05 [parseCommand] : =================================================
-
-06:12:05 [command] : === command: ===
-
-06:12:05 [command] : pause
-06:12:05 [command] : =================================================
-
-06:12:05 [command] : === params: ===
-
-06:12:05 [command] : Array
-(
-    [0] => замороз 124
-    [1] => замороз
-    [2] => 124
-)
-
-06:12:05 [command] : =================================================
-
-06:12:05 [command] : === userData: ===
-
-06:12:05 [command] : stdClass Object
-(
-    [id] => 1528600
-    [first_name] => Roman
-    [last_name] => Dots
-)
-
-06:12:05 [command] : =================================================
-
-06:12:29 [parseCommand] : [INFO] Parsing command in заморозка 1244
-06:12:29 [parseCommand] : [INFO] Testing regular exp `/^(заморо\S+)\D*(\d+)/i` for command `pause`
-06:12:29 [parseCommand] : === Matches found:: ===
-
-06:12:29 [parseCommand] : Array
-(
-    [0] => заморозка 1244
-    [1] => заморозка
-    [2] => 1244
-)
-
-06:12:29 [parseCommand] : =================================================
-
-06:12:29 [command] : === command: ===
-
-06:12:29 [command] : pause
-06:12:29 [command] : =================================================
-
-06:12:29 [command] : === params: ===
-
-06:12:29 [command] : Array
-(
-    [0] => заморозка 1244
-    [1] => заморозка
-    [2] => 1244
-)
-
-06:12:29 [command] : =================================================
-
-06:12:29 [command] : === userData: ===
-
-06:12:29 [command] : stdClass Object
-(
-    [id] => 1528600
-    [first_name] => Roman
-    [last_name] => Dots
-)
-
-06:12:29 [command] : =================================================
-
-06:12:29 [reply] : === Reply sent to 1528600: ===
-
-06:12:29 [reply] : Command result
-06:12:29 [reply] : =================================================
-
-06:13:22 [parseCommand] : [INFO] Parsing command in заморозь 1433
-06:13:22 [parseCommand] : [INFO] Testing regular exp `/^(заморо\S+)\D*(\d+)/i` for command `pause`
-06:13:22 [parseCommand] : === Matches found:: ===
-
-06:13:22 [parseCommand] : Array
-(
-    [0] => заморозь 1433
-    [1] => заморозь
-    [2] => 1433
-)
-
-06:13:22 [parseCommand] : =================================================
-
-06:13:22 [command] : === command: ===
-
-06:13:22 [command] : pause
-06:13:22 [command] : =================================================
-
-06:13:22 [command] : === params: ===
-
-06:13:22 [command] : Array
-(
-    [0] => заморозь 1433
-    [1] => заморозь
-    [2] => 1433
-)
-
-06:13:22 [command] : =================================================
-
-06:13:22 [command] : === userData: ===
-
-06:13:22 [command] : stdClass Object
-(
-    [id] => 1528600
-    [first_name] => Roman
-    [last_name] => Dots
-)
-
-06:13:22 [command] : =================================================
-
-06:13:22 [reply] : === Reply sent to 1528600: ===
-
-06:13:22 [reply] : Command result
-06:13:22 [reply] : =================================================
-
-06:15:51 [parseCommand] : [INFO] Looking up for commands in text...
-06:15:51 [parseCommand] : [INFO] Testing message `заморозь 1244` on regular exp `/^заморо\S+\D*(\d+)$/i` for command `pause`
-06:15:51 [parseCommand] : === Matches found:: ===
-
-06:15:51 [parseCommand] : Array
-(
-    [0] => 1244
-)
-
-06:15:51 [parseCommand] : =================================================
-
-06:15:51 [command] : === command: ===
-
-06:15:51 [command] : pause
-06:15:51 [command] : =================================================
-
-06:15:51 [command] : === params: ===
-
-06:15:51 [command] : Array
-(
-    [0] => 1244
-)
-
-06:15:51 [command] : =================================================
-
-06:15:51 [command] : === userData: ===
-
-06:15:51 [command] : stdClass Object
-(
-    [id] => 1528600
-    [first_name] => Roman
-    [last_name] => Dots
-)
-
-06:15:51 [command] : =================================================
-
-06:15:51 [reply] : === Reply sent to 1528600: ===
-
-06:15:51 [reply] : Array
-(
-    [0] => 1244
-)
-
-06:15:51 [reply] : =================================================
-
-06:15:56 [parseCommand] : [INFO] Looking up for commands in text...
-06:15:56 [parseCommand] : [INFO] Testing message `Заморозка 4523` on regular exp `/^заморо\S+\D*(\d+)$/i` for command `pause`
-06:15:56 [parseCommand] : [INFO] Testing message `Заморозка 4523` on regular exp `/^(abc).*$/i` for command `test`
-06:15:56 [reply] : === Reply sent to 1528600: ===
-
-06:15:56 [reply] : Заморозка 4523, Roman
-06:15:56 [reply] : =================================================
-
-06:16:05 [parseCommand] : [INFO] Looking up for commands in text...
-06:16:05 [parseCommand] : [INFO] Testing message `заморозка абонемента 35235` on regular exp `/^заморо\S+\D*(\d+)$/i` for command `pause`
-06:16:05 [parseCommand] : === Matches found:: ===
-
-06:16:05 [parseCommand] : Array
-(
-    [0] => 35235
-)
-
-06:16:05 [parseCommand] : =================================================
-
-06:16:05 [command] : === command: ===
-
-06:16:05 [command] : pause
-06:16:05 [command] : =================================================
-
-06:16:05 [command] : === params: ===
-
-06:16:05 [command] : Array
-(
-    [0] => 35235
-)
-
-06:16:05 [command] : =================================================
-
-06:16:05 [command] : === userData: ===
-
-06:16:05 [command] : stdClass Object
-(
-    [id] => 1528600
-    [first_name] => Roman
-    [last_name] => Dots
-)
-
-06:16:05 [command] : =================================================
-
-06:16:05 [reply] : === Reply sent to 1528600: ===
-
-06:16:05 [reply] : Array
-(
-    [0] => 35235
-)
-
-06:16:05 [reply] : =================================================
-
-06:23:29 [parseCommand] : [INFO] Looking up for commands in text...
-06:23:29 [parseCommand] : [INFO] Testing message `ЗамороЗЬ 35415, пожалуйста` on regular exp `/^заморо\S+\D*(\d+)$/i` for command `pause`
-06:23:29 [parseCommand] : [INFO] Testing message `ЗамороЗЬ 35415, пожалуйста` on regular exp `/^(abc).*$/i` for command `test`
-06:23:29 [reply] : === Reply sent to 1528600: ===
-
-06:23:29 [reply] : ЗамороЗЬ 35415, пожалуйста, Roman
-06:23:29 [reply] : =================================================
-
-06:23:36 [parseCommand] : [INFO] Looking up for commands in text...
-06:23:36 [parseCommand] : [INFO] Testing message `ЗамороЗЬ 35415` on regular exp `/^заморо\S+\D*(\d+)$/i` for command `pause`
-06:23:36 [parseCommand] : === Matches found:: ===
-
-06:23:36 [parseCommand] : Array
-(
-    [0] => 35415
-)
-
-06:23:36 [parseCommand] : =================================================
-
-06:23:36 [command] : === command: ===
-
-06:23:36 [command] : pause
-06:23:36 [command] : =================================================
-
-06:23:36 [command] : === params: ===
-
-06:23:36 [command] : Array
-(
-    [0] => 35415
-)
-
-06:23:36 [command] : =================================================
-
-06:23:36 [command] : === userData: ===
-
-06:23:36 [command] : stdClass Object
-(
-    [id] => 1528600
-    [first_name] => Roman
-    [last_name] => Dots
-)
-
-06:23:36 [command] : =================================================
-
-06:23:36 [reply] : === Reply sent to 1528600: ===
-
-06:23:36 [reply] : Array
-(
-    [0] => 35415
-)
-
-06:23:36 [reply] : =================================================
-
-06:24:15 [parseCommand] : [INFO] Looking up for commands in text...
-06:24:15 [parseCommand] : [INFO] Testing message `fsfas` on regular exp `/^заморо\S+\D*(\d+)$/i` for command `pause`
-06:24:15 [parseCommand] : [INFO] Testing message `fsfas` on regular exp `/^(abc).*$/i` for command `test`
-06:24:15 [reply] : === Reply sent to 1528600: ===
-
-06:24:15 [reply] : fsfas, Roman
-06:24:15 [reply] : =================================================
-
-06:25:45 [parseCommand] : [INFO] Looking up for commands in text...
-06:25:45 [parseCommand] : [INFO] Testing message `ЗамороЗЬ 35415` on regular exp `/^замороз\S+\D*(\d+)\D*$/i` for command `pause`
-06:25:45 [parseCommand] : === Matches found:: ===
-
-06:25:45 [parseCommand] : Array
-(
-    [0] => 35415
-)
-
-06:25:45 [parseCommand] : =================================================
-
-06:25:45 [command] : === command: ===
-
-06:25:45 [command] : pause
-06:25:45 [command] : =================================================
-
-06:25:45 [command] : === params: ===
-
-06:25:45 [command] : Array
-(
-    [0] => 35415
-)
-
-06:25:45 [command] : =================================================
-
-06:25:45 [command] : === userData: ===
-
-06:25:45 [command] : stdClass Object
-(
-    [id] => 1528600
-    [first_name] => Roman
-    [last_name] => Dots
-)
-
-06:25:45 [command] : =================================================
-
-06:25:45 [reply] : === Reply sent to 1528600: ===
-
-06:25:45 [reply] : Array
-(
-    [0] => 35415
-)
-
-06:25:45 [reply] : =================================================
-
-06:26:06 [parseCommand] : [INFO] Looking up for commands in text...
-06:26:06 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:26:06 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^(abc).*$/i` for command `test`
-06:26:06 [parseCommand] : === Matches found:: ===
-
-06:26:06 [parseCommand] : Array
-(
-    [0] => abc
-)
-
-06:26:06 [parseCommand] : =================================================
-
-06:26:06 [command] : === command: ===
-
-06:26:06 [command] : test
-06:26:06 [command] : =================================================
-
-06:26:06 [command] : === params: ===
-
-06:26:06 [command] : Array
-(
-    [0] => abc
-)
-
-06:26:06 [command] : =================================================
-
-06:26:06 [command] : === userData: ===
-
-06:26:06 [command] : stdClass Object
-(
-    [id] => 1528600
-    [first_name] => Roman
-    [last_name] => Dots
-)
-
-06:26:06 [command] : =================================================
-
-06:26:06 [reply] : === Reply sent to 1528600: ===
-
-06:26:06 [reply] : Array
-(
-    [0] => abc
-)
-
-06:26:06 [reply] : =================================================
-
-06:27:28 [parseCommand] : [INFO] Looking up for commands in text...
-06:27:28 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:27:28 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-06:27:28 [reply] : === Reply sent to 1528600: ===
-
-06:27:28 [reply] : Привет, Roman
-06:27:28 [reply] : =================================================
-
-06:27:37 [parseCommand] : [INFO] Looking up for commands in text...
-06:27:37 [parseCommand] : [INFO] Testing message `заморозь 1433` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:27:37 [parseCommand] : === Matches found:: ===
-
-06:27:37 [parseCommand] : Array
-(
-    [0] => 1433
-)
-
-06:27:37 [parseCommand] : =================================================
-
-06:27:37 [command] : === command: ===
-
-06:27:37 [command] : pause
-06:27:37 [command] : =================================================
-
-06:27:37 [command] : === params: ===
-
-06:27:37 [command] : Array
-(
-    [0] => 1433
-)
-
-06:27:37 [command] : =================================================
-
-06:27:37 [command] : === userData: ===
-
-06:27:37 [command] : stdClass Object
-(
-    [id] => 1528600
-    [first_name] => Roman
-    [last_name] => Dots
-)
-
-06:27:37 [command] : =================================================
-
-06:27:37 [reply] : === Reply sent to 1528600: ===
-
-06:27:37 [reply] : Array
-(
-    [0] => 1433
-)
-
-06:27:37 [reply] : =================================================
-
-06:28:49 [parseCommand] : [INFO] Looking up for commands in text...
-06:28:49 [parseCommand] : [INFO] Testing message `фис` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:28:49 [parseCommand] : [INFO] Testing message `фис` on regular exp `/^(abc).*$/i` for command `test`
-06:28:49 [reply] : === Reply sent to 1528600: ===
-
-06:28:49 [reply] : фис, Roman
-06:28:49 [reply] : =================================================
-
-06:28:50 [parseCommand] : [INFO] Looking up for commands in text...
-06:28:50 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:28:50 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^(abc).*$/i` for command `test`
-06:28:50 [parseCommand] : === Matches found:: ===
-
-06:28:50 [parseCommand] : Array
-(
-    [0] => abc
-)
-
-06:28:50 [parseCommand] : =================================================
-
-06:28:50 [reply] : === Reply sent to 1528600: ===
-
-06:28:50 [reply] : Test command executed
-06:28:50 [reply] : =================================================
-
-06:29:01 [parseCommand] : [INFO] Looking up for commands in text...
-06:29:01 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:29:01 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^(abc).*$/i` for command `test`
-06:29:01 [parseCommand] : === Matches found:: ===
-
-06:29:01 [parseCommand] : Array
-(
-    [0] => abc
-)
-
-06:29:01 [parseCommand] : =================================================
-
-06:29:01 [reply] : === Reply sent to 1528600: ===
-
-06:29:01 [reply] : Test command executed
-06:29:01 [reply] : =================================================
-
-06:29:02 [parseCommand] : [INFO] Looking up for commands in text...
-06:29:02 [parseCommand] : [INFO] Testing message `заморозка 2352` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:29:02 [parseCommand] : === Matches found:: ===
-
-06:29:02 [parseCommand] : Array
-(
-    [0] => 2352
-)
-
-06:29:02 [parseCommand] : =================================================
-
-06:29:02 [reply] : === Reply sent to 1528600: ===
-
-06:29:02 [reply] : Команда не найдена.
-06:29:02 [reply] : =================================================
-
-06:29:13 [parseCommand] : [INFO] Looking up for commands in text...
-06:29:13 [parseCommand] : [INFO] Testing message `заморозка 2352` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:29:13 [parseCommand] : === Matches found:: ===
-
-06:29:13 [parseCommand] : Array
-(
-    [0] => 2352
-)
-
-06:29:13 [parseCommand] : =================================================
-
-06:29:13 [reply] : === Reply sent to 1528600: ===
-
-06:29:13 [reply] : Команда не найдена.
-06:29:13 [reply] : =================================================
-
-06:29:37 [parseCommand] : [INFO] Looking up for commands in text...
-06:29:37 [parseCommand] : [INFO] Testing message `заморозь 1433` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:29:37 [parseCommand] : === Matches found:: ===
-
-06:29:37 [parseCommand] : Array
-(
-    [0] => 1433
-)
-
-06:29:37 [parseCommand] : =================================================
-
-06:29:37 [reply] : === Reply sent to 1528600: ===
-
-06:29:37 [reply] : Команда не найдена.
-06:29:37 [reply] : =================================================
-
-06:31:46 [parseCommand] : [INFO] Looking up for commands in text...
-06:31:46 [parseCommand] : [INFO] Testing message `заморозка 1324` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:31:46 [parseCommand] : === Matches found:: ===
-
-06:31:46 [parseCommand] : Array
-(
-    [0] => 1324
-)
-
-06:31:46 [parseCommand] : =================================================
-
-06:31:46 [reply] : === Reply sent to 1528600: ===
-
-06:31:46 [reply] : Команда не найдена.
-06:31:46 [reply] : =================================================
-
-06:32:01 [parseCommand] : [INFO] Looking up for commands in text...
-06:32:01 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:32:01 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^(abc).*$/i` for command `test`
-06:32:01 [parseCommand] : === Matches found:: ===
-
-06:32:01 [parseCommand] : Array
-(
-    [0] => abc
-)
-
-06:32:01 [parseCommand] : =================================================
-
-06:32:01 [reply] : === Reply sent to 1528600: ===
-
-06:32:01 [reply] : Test command executed
-06:32:01 [reply] : =================================================
-
-06:32:13 [parseCommand] : [INFO] Looking up for commands in text...
-06:32:13 [parseCommand] : [INFO] Testing message `заморозка 2352` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:32:13 [parseCommand] : === Matches found:: ===
-
-06:32:13 [parseCommand] : Array
-(
-    [0] => 2352
-)
-
-06:32:13 [parseCommand] : =================================================
-
-06:32:13 [reply] : === Reply sent to 1528600: ===
-
-06:32:13 [reply] : Команда не найдена.
-06:32:13 [reply] : =================================================
-
-06:42:01 [parseCommand] : [INFO] Looking up for commands in text...
-06:42:01 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:42:01 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^(abc).*$/i` for command `test`
-06:42:01 [parseCommand] : === Matches found:: ===
-
-06:42:01 [parseCommand] : Array
-(
-    [0] => abc
-)
-
-06:42:01 [parseCommand] : =================================================
-
-06:42:01 [reply] : === Reply sent to 1528600: ===
-
-06:42:01 [reply] : Test command executed
-06:42:01 [reply] : =================================================
-
-06:42:13 [parseCommand] : [INFO] Looking up for commands in text...
-06:42:13 [parseCommand] : [INFO] Testing message `заморозка 2352` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:42:13 [parseCommand] : === Matches found:: ===
-
-06:42:13 [parseCommand] : Array
-(
-    [0] => 2352
-)
-
-06:42:13 [parseCommand] : =================================================
-
-06:42:13 [reply] : === Reply sent to 1528600: ===
-
-06:42:13 [reply] : Команда не найдена.
-06:42:13 [reply] : =================================================
-
-06:42:34 [parseCommand] : [INFO] Looking up for commands in text...
-06:42:34 [parseCommand] : [INFO] Testing message `заморозка 2352` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:42:34 [parseCommand] : === Matches found:: ===
-
-06:42:34 [parseCommand] : Array
-(
-    [0] => 2352
-)
-
-06:42:34 [parseCommand] : =================================================
-
-06:42:38 [parseCommand] : [INFO] Looking up for commands in text...
-06:42:38 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:42:38 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-06:42:45 [parseCommand] : [INFO] Looking up for commands in text...
-06:42:45 [parseCommand] : [INFO] Testing message `заморозка 2352` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:42:45 [parseCommand] : === Matches found:: ===
-
-06:42:45 [parseCommand] : Array
-(
-    [0] => 2352
-)
-
-06:42:45 [parseCommand] : =================================================
-
-06:42:49 [parseCommand] : [INFO] Looking up for commands in text...
-06:42:49 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:42:49 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-06:42:53 [handleMessageNew] : [ERROR] $data->object->body not exists
-06:47:10 [parseCommand] : [INFO] Looking up for commands in text...
-06:47:10 [parseCommand] : [INFO] Testing message `хай` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:47:10 [parseCommand] : [INFO] Testing message `хай` on regular exp `/^(abc).*$/i` for command `test`
-06:47:10 [reply] : === Reply sent to 1528600: ===
-
-06:47:10 [reply] : , хай
-06:47:10 [reply] : =================================================
-
-06:47:14 [parseCommand] : [INFO] Looking up for commands in text...
-06:47:14 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:47:14 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^(abc).*$/i` for command `test`
-06:47:14 [reply] : === Reply sent to 1528600: ===
-
-06:47:14 [reply] : , привет
-06:47:14 [reply] : =================================================
-
-06:47:21 [parseCommand] : [INFO] Looking up for commands in text...
-06:47:21 [parseCommand] : [INFO] Testing message `хай` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:47:21 [parseCommand] : [INFO] Testing message `хай` on regular exp `/^(abc).*$/i` for command `test`
-06:47:21 [reply] : === Reply sent to 1528600: ===
-
-06:47:21 [reply] : , хай
-06:47:21 [reply] : =================================================
-
-06:47:24 [parseCommand] : [INFO] Looking up for commands in text...
-06:47:24 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:47:24 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^(abc).*$/i` for command `test`
-06:47:24 [reply] : === Reply sent to 1528600: ===
-
-06:47:24 [reply] : , привет
-06:47:24 [reply] : =================================================
-
-06:50:21 [parseCommand] : [INFO] Looking up for commands in text...
-06:50:21 [parseCommand] : [INFO] Testing message `хай` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:50:21 [parseCommand] : [INFO] Testing message `хай` on regular exp `/^(abc).*$/i` for command `test`
-06:50:21 [reply] : === Reply sent to 1528600: ===
-
-06:50:21 [reply] : , хай
-06:50:21 [reply] : =================================================
-
-06:50:24 [parseCommand] : [INFO] Looking up for commands in text...
-06:50:24 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:50:24 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^(abc).*$/i` for command `test`
-06:50:24 [reply] : === Reply sent to 1528600: ===
-
-06:50:24 [reply] : , привет
-06:50:24 [reply] : =================================================
-
-06:55:45 [parseCommand] : [INFO] Looking up for commands in text...
-06:55:45 [parseCommand] : [INFO] Testing message `заморозка 2352` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:55:45 [parseCommand] : === Matches found:: ===
-
-06:55:45 [parseCommand] : Array
-(
-    [0] => 2352
-)
-
-06:55:45 [parseCommand] : =================================================
-
-06:55:45 [reply] : === Reply sent to 1528600: ===
-
-06:55:45 [reply] : Команда не найдена.
-06:55:45 [reply] : =================================================
-
-06:55:49 [parseCommand] : [INFO] Looking up for commands in text...
-06:55:49 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-06:55:49 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-06:55:49 [reply] : === Reply sent to 1528600: ===
-
-06:55:49 [reply] : , Привет
-06:55:49 [reply] : =================================================
-
-07:00:21 [parseCommand] : [INFO] Looking up for commands in text...
-07:00:21 [parseCommand] : [INFO] Testing message `хай` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:00:21 [parseCommand] : [INFO] Testing message `хай` on regular exp `/^(abc).*$/i` for command `test`
-07:00:21 [reply] : === Reply sent to 1528600: ===
-
-07:00:21 [reply] : , хай
-07:00:21 [reply] : =================================================
-
-07:00:24 [parseCommand] : [INFO] Looking up for commands in text...
-07:00:24 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:00:24 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^(abc).*$/i` for command `test`
-07:00:24 [reply] : === Reply sent to 1528600: ===
-
-07:00:24 [reply] : , привет
-07:00:24 [reply] : =================================================
-
-07:12:01 [parseCommand] : [INFO] Looking up for commands in text...
-07:12:01 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:12:01 [parseCommand] : [INFO] Testing message `abc` on regular exp `/^(abc).*$/i` for command `test`
-07:12:01 [parseCommand] : === Matches found:: ===
-
-07:12:01 [parseCommand] : Array
-(
-    [0] => abc
-)
-
-07:12:01 [parseCommand] : =================================================
-
-07:12:01 [reply] : === Reply sent to 1528600: ===
-
-07:12:01 [reply] : Test command executed
-07:12:01 [reply] : =================================================
-
-07:12:13 [parseCommand] : [INFO] Looking up for commands in text...
-07:12:13 [parseCommand] : [INFO] Testing message `заморозка 2352` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:12:13 [parseCommand] : === Matches found:: ===
-
-07:12:13 [parseCommand] : Array
-(
-    [0] => 2352
-)
-
-07:12:13 [parseCommand] : =================================================
-
-07:12:13 [reply] : === Reply sent to 1528600: ===
-
-07:12:13 [reply] : Команда не найдена.
-07:12:13 [reply] : =================================================
-
-07:25:45 [parseCommand] : [INFO] Looking up for commands in text...
-07:25:45 [parseCommand] : [INFO] Testing message `заморозка 2352` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:25:45 [parseCommand] : === Matches found:: ===
-
-07:25:45 [parseCommand] : Array
-(
-    [0] => 2352
-)
-
-07:25:45 [parseCommand] : =================================================
-
-07:25:45 [reply] : === Reply sent to 1528600: ===
-
-07:25:45 [reply] : Команда не найдена.
-07:25:45 [reply] : =================================================
-
-07:25:49 [parseCommand] : [INFO] Looking up for commands in text...
-07:25:49 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:25:49 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:25:49 [reply] : === Reply sent to 1528600: ===
-
-07:25:49 [reply] : , Привет
-07:25:49 [reply] : =================================================
-
-07:26:05 [parseCommand] : [INFO] Looking up for commands in text...
-07:26:05 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:26:05 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:26:05 [reply] : === Reply sent to 1528600: ===
-
-07:26:05 [reply] : , Привет
-07:26:05 [reply] : =================================================
-
-07:26:11 [parseCommand] : [INFO] Looking up for commands in text...
-07:26:11 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:26:11 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:26:11 [reply] : === Reply sent to 1528600: ===
-
-07:26:11 [reply] : , Привет!
-07:26:11 [reply] : =================================================
-
-07:26:16 [parseCommand] : [INFO] Looking up for commands in text...
-07:26:16 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:26:16 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:26:16 [reply] : === Reply sent to 1528600: ===
-
-07:26:16 [reply] : , Привет
-07:26:16 [reply] : =================================================
-
-07:26:22 [parseCommand] : [INFO] Looking up for commands in text...
-07:26:22 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:26:22 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:26:22 [reply] : === Reply sent to 1528600: ===
-
-07:26:22 [reply] : , Привет!
-07:26:22 [reply] : =================================================
-
-07:26:43 [parseCommand] : [INFO] Looking up for commands in text...
-07:26:43 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:26:43 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:26:43 [reply] : === Reply sent to 1528600: ===
-
-07:26:43 [reply] : Привет!
-07:26:43 [reply] : =================================================
-
-07:26:47 [parseCommand] : [INFO] Looking up for commands in text...
-07:26:47 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:26:47 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:26:47 [reply] : === Reply sent to 1528600: ===
-
-07:26:47 [reply] : Привет
-07:26:47 [reply] : =================================================
-
-07:26:53 [parseCommand] : [INFO] Looking up for commands in text...
-07:26:53 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:26:53 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:26:53 [reply] : === Reply sent to 1528600: ===
-
-07:26:53 [reply] : Привет!
-07:26:53 [reply] : =================================================
-
-07:26:57 [parseCommand] : [INFO] Looking up for commands in text...
-07:26:57 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:26:57 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:26:57 [reply] : === Reply sent to 1528600: ===
-
-07:26:57 [reply] : Привет
-07:26:57 [reply] : =================================================
-
-07:27:02 [parseCommand] : [INFO] Looking up for commands in text...
-07:27:02 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:27:02 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:27:02 [reply] : === Reply sent to 1528600: ===
-
-07:27:02 [reply] : 
-07:27:02 [reply] : =================================================
-
-07:27:07 [parseCommand] : [INFO] Looking up for commands in text...
-07:27:07 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:27:07 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:27:07 [reply] : === Reply sent to 1528600: ===
-
-07:27:07 [reply] : 
-07:27:07 [reply] : =================================================
-
-07:27:12 [parseCommand] : [INFO] Looking up for commands in text...
-07:27:12 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:27:12 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:27:12 [reply] : === Reply sent to 1528600: ===
-
-07:27:12 [reply] : 
-07:27:12 [reply] : =================================================
-
-07:27:17 [parseCommand] : [INFO] Looking up for commands in text...
-07:27:17 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:27:17 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:27:17 [reply] : === Reply sent to 1528600: ===
-
-07:27:17 [reply] : 
-07:27:17 [reply] : =================================================
-
-07:27:32 [parseCommand] : [INFO] Looking up for commands in text...
-07:27:32 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:27:32 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:27:32 [reply] : === Reply sent to 1528600: ===
-
-07:27:32 [reply] : Привет
-07:27:32 [reply] : =================================================
-
-07:27:37 [parseCommand] : [INFO] Looking up for commands in text...
-07:27:37 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:27:37 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:27:37 [reply] : === Reply sent to 1528600: ===
-
-07:27:37 [reply] : Привет!
-07:27:37 [reply] : =================================================
-
-07:27:53 [parseCommand] : [INFO] Looking up for commands in text...
-07:27:53 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:27:53 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:27:53 [reply] : === Reply sent to 1528600: ===
-
-07:27:53 [reply] : Привет!
-07:27:53 [reply] : =================================================
-
-07:28:11 [parseCommand] : [INFO] Looking up for commands in text...
-07:28:11 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:28:11 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:28:11 [reply] : === Reply sent to 1528600: ===
-
-07:28:11 [reply] : Привет!
-07:28:11 [reply] : =================================================
-
-07:28:14 [parseCommand] : [INFO] Looking up for commands in text...
-07:28:14 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:28:14 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:28:14 [reply] : === Reply sent to 1528600: ===
-
-07:28:14 [reply] : Привет
-07:28:14 [reply] : =================================================
-
-07:29:16 [parseCommand] : [INFO] Looking up for commands in text...
-07:29:16 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:29:16 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:29:16 [reply] : === Reply sent to 1528600: ===
-
-07:29:16 [reply] : Привет
-07:29:16 [reply] : =================================================
-
-07:29:22 [parseCommand] : [INFO] Looking up for commands in text...
-07:29:22 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:29:22 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:29:22 [reply] : === Reply sent to 1528600: ===
-
-07:29:22 [reply] : Привет!
-07:29:22 [reply] : =================================================
-
-07:29:37 [parseCommand] : [INFO] Looking up for commands in text...
-07:29:37 [parseCommand] : [INFO] Testing message `заморозь 1433` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:29:37 [parseCommand] : === Matches found:: ===
-
-07:29:37 [parseCommand] : Array
-(
-    [0] => 1433
-)
-
-07:29:37 [parseCommand] : =================================================
-
-07:29:37 [reply] : === Reply sent to 1528600: ===
-
-07:29:37 [reply] : Команда не найдена.
-07:29:37 [reply] : =================================================
-
-07:29:53 [parseCommand] : [INFO] Looking up for commands in text...
-07:29:53 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:29:53 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:29:53 [reply] : === Reply sent to 1528600: ===
-
-07:29:53 [reply] : Привет!
-07:29:53 [reply] : =================================================
-
-07:29:57 [parseCommand] : [INFO] Looking up for commands in text...
-07:29:57 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:29:57 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:29:57 [reply] : === Reply sent to 1528600: ===
-
-07:29:57 [reply] : Привет
-07:29:57 [reply] : =================================================
-
-07:30:12 [parseCommand] : [INFO] Looking up for commands in text...
-07:30:12 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:30:12 [parseCommand] : [INFO] Testing message `Привет` on regular exp `/^(abc).*$/i` for command `test`
-07:30:12 [reply] : === Reply sent to 1528600: ===
-
-07:30:12 [reply] : Привет
-07:30:12 [reply] : =================================================
-
-07:30:17 [parseCommand] : [INFO] Looking up for commands in text...
-07:30:17 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:30:17 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:30:17 [reply] : === Reply sent to 1528600: ===
-
-07:30:17 [reply] : Привет!
-07:30:17 [reply] : =================================================
-
-07:30:21 [parseCommand] : [INFO] Looking up for commands in text...
-07:30:21 [parseCommand] : [INFO] Testing message `хай` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:30:21 [parseCommand] : [INFO] Testing message `хай` on regular exp `/^(abc).*$/i` for command `test`
-07:30:21 [reply] : === Reply sent to 1528600: ===
-
-07:30:21 [reply] : хай
-07:30:21 [reply] : =================================================
-
-07:30:24 [parseCommand] : [INFO] Looking up for commands in text...
-07:30:24 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:30:24 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^(abc).*$/i` for command `test`
-07:30:24 [reply] : === Reply sent to 1528600: ===
-
-07:30:24 [reply] : привет
-07:30:24 [reply] : =================================================
-
-07:31:46 [parseCommand] : [INFO] Looking up for commands in text...
-07:31:46 [parseCommand] : [INFO] Testing message `заморозка 1324` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:31:46 [parseCommand] : === Matches found:: ===
-
-07:31:46 [parseCommand] : Array
-(
-    [0] => 1324
-)
-
-07:31:46 [parseCommand] : =================================================
-
-07:31:46 [reply] : === Reply sent to 1528600: ===
-
-07:31:46 [reply] : Команда не найдена.
-07:31:46 [reply] : =================================================
-
-07:35:16 [parseCommand] : [INFO] Looking up for commands in text...
-07:35:16 [parseCommand] : [INFO] Testing message `Ghbd!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:35:16 [parseCommand] : [INFO] Testing message `Ghbd!` on regular exp `/^(abc).*$/i` for command `test`
-07:35:16 [reply] : === Reply sent to 1528600: ===
-
-07:35:16 [reply] : Ghbd, Roman!
-07:35:16 [reply] : =================================================
-
-07:35:19 [parseCommand] : [INFO] Looking up for commands in text...
-07:35:19 [parseCommand] : [INFO] Testing message `Ха!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:35:19 [parseCommand] : [INFO] Testing message `Ха!` on regular exp `/^(abc).*$/i` for command `test`
-07:35:19 [reply] : === Reply sent to 1528600: ===
-
-07:35:19 [reply] : Ха, Roman!
-07:35:19 [reply] : =================================================
-
-07:35:21 [parseCommand] : [INFO] Looking up for commands in text...
-07:35:21 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:35:21 [parseCommand] : [INFO] Testing message `привет` on regular exp `/^(abc).*$/i` for command `test`
-07:35:21 [reply] : === Reply sent to 1528600: ===
-
-07:35:21 [reply] : привет
-07:35:21 [reply] : =================================================
-
-07:38:46 [parseCommand] : [INFO] Looking up for commands in text...
-07:38:46 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:38:46 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:38:46 [reply] : === Reply sent to 1528600: ===
-
-07:38:46 [reply] : Привет, Roman!
-07:38:46 [reply] : =================================================
-
-07:38:49 [parseCommand] : [INFO] Looking up for commands in text...
-07:38:49 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:38:49 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:38:49 [reply] : === Reply sent to 1528600: ===
-
-07:38:49 [reply] : Привет, Roman!
-07:38:49 [reply] : =================================================
-
-07:38:52 [parseCommand] : [INFO] Looking up for commands in text...
-07:38:52 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:38:52 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:38:52 [reply] : === Reply sent to 1528600: ===
-
-07:38:52 [reply] : Привет, Roman!
-07:38:52 [reply] : =================================================
-
-07:38:56 [parseCommand] : [INFO] Looking up for commands in text...
-07:38:56 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:38:56 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:38:56 [reply] : === Reply sent to 1528600: ===
-
-07:38:56 [reply] : Привет, Roman!
-07:38:56 [reply] : =================================================
-
-07:38:58 [parseCommand] : [INFO] Looking up for commands in text...
-07:38:58 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:38:58 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:38:58 [reply] : === Reply sent to 1528600: ===
-
-07:38:58 [reply] : Привет, Roman!
-07:38:58 [reply] : =================================================
-
-07:38:58 [parseCommand] : [INFO] Looking up for commands in text...
-07:38:58 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:38:58 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:38:58 [reply] : === Reply sent to 1528600: ===
-
-07:38:58 [reply] : Привет, Roman!
-07:38:58 [reply] : =================================================
-
-07:38:59 [parseCommand] : [INFO] Looking up for commands in text...
-07:38:59 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:38:59 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:38:59 [reply] : === Reply sent to 1528600: ===
-
-07:38:59 [reply] : Привет, Roman!
-07:38:59 [reply] : =================================================
-
-07:39:00 [parseCommand] : [INFO] Looking up for commands in text...
-07:39:00 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:39:00 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:39:00 [reply] : === Reply sent to 1528600: ===
-
-07:39:00 [reply] : Привет, Roman!
-07:39:00 [reply] : =================================================
-
-07:39:00 [parseCommand] : [INFO] Looking up for commands in text...
-07:39:00 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:39:00 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:39:00 [reply] : === Reply sent to 1528600: ===
-
-07:39:00 [reply] : Привет, Roman!
-07:39:00 [reply] : =================================================
-
-07:39:01 [parseCommand] : [INFO] Looking up for commands in text...
-07:39:01 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:39:01 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:39:01 [reply] : === Reply sent to 1528600: ===
-
-07:39:01 [reply] : Привет, Roman!
-07:39:01 [reply] : =================================================
-
-07:39:02 [parseCommand] : [INFO] Looking up for commands in text...
-07:39:02 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:39:02 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:39:02 [reply] : === Reply sent to 1528600: ===
-
-07:39:02 [reply] : Привет, Roman!
-07:39:02 [reply] : =================================================
-
-07:39:56 [parseCommand] : [INFO] Looking up for commands in text...
-07:39:56 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:39:56 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:39:56 [reply] : === Reply sent to 1528600: ===
-
-07:39:56 [reply] : Привет, Roman!
-07:39:56 [reply] : =================================================
-
-07:39:57 [parseCommand] : [INFO] Looking up for commands in text...
-07:39:57 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:39:57 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:39:57 [reply] : === Reply sent to 1528600: ===
-
-07:39:57 [reply] : Привет, Roman!
-07:39:57 [reply] : =================================================
-
-07:39:59 [parseCommand] : [INFO] Looking up for commands in text...
-07:39:59 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:39:59 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:39:59 [reply] : === Reply sent to 1528600: ===
-
-07:39:59 [reply] : Привет, Roman!
-07:39:59 [reply] : =================================================
-
-07:40:12 [parseCommand] : [INFO] Looking up for commands in text...
-07:40:12 [parseCommand] : [INFO] Testing message `replyRandomly` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:40:12 [parseCommand] : [INFO] Testing message `replyRandomly` on regular exp `/^(abc).*$/i` for command `test`
-07:40:12 [reply] : === Reply sent to 1528600: ===
-
-07:40:12 [reply] : 1.replyRandomly
-07:40:12 [reply] : =================================================
-
-07:40:16 [parseCommand] : [INFO] Looking up for commands in text...
-07:40:16 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:40:16 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:40:16 [reply] : === Reply sent to 1528600: ===
-
-07:40:16 [reply] : 1.Привет!
-07:40:16 [reply] : =================================================
-
-07:40:18 [parseCommand] : [INFO] Looking up for commands in text...
-07:40:18 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:40:18 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:40:18 [reply] : === Reply sent to 1528600: ===
-
-07:40:18 [reply] : 0.Привет, Roman!
-07:40:18 [reply] : =================================================
-
-07:40:37 [parseCommand] : [INFO] Looking up for commands in text...
-07:40:37 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:40:37 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:40:37 [reply] : === Reply sent to 1528600: ===
-
-07:40:37 [reply] : Привет, Roman!
-07:40:37 [reply] : =================================================
-
-07:40:38 [parseCommand] : [INFO] Looking up for commands in text...
-07:40:38 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:40:38 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:40:38 [reply] : === Reply sent to 1528600: ===
-
-07:40:38 [reply] : Привет!
-07:40:38 [reply] : =================================================
-
-07:40:40 [parseCommand] : [INFO] Looking up for commands in text...
-07:40:40 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:40:40 [parseCommand] : [INFO] Testing message `Привет!` on regular exp `/^(abc).*$/i` for command `test`
-07:40:40 [reply] : === Reply sent to 1528600: ===
-
-07:40:40 [reply] : Привет, Roman!
-07:40:40 [reply] : =================================================
-
-07:41:34 [parseCommand] : [INFO] Looking up for commands in text...
-07:41:34 [parseCommand] : [INFO] Testing message `Заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:41:34 [parseCommand] : === Matches found:: ===
-
-07:41:34 [parseCommand] : Array
-(
-    [0] => 1243
-)
-
-07:41:34 [parseCommand] : =================================================
-
-07:41:34 [reply] : === Reply sent to 1528600: ===
-
-07:41:34 [reply] : Клиент с картой Array заморожен!
-07:41:34 [reply] : =================================================
-
-07:41:46 [parseCommand] : [INFO] Looking up for commands in text...
-07:41:46 [parseCommand] : [INFO] Testing message `Заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:41:46 [parseCommand] : === Matches found:: ===
-
-07:41:46 [parseCommand] : Array
-(
-    [0] => 1243
-)
-
-07:41:46 [parseCommand] : =================================================
-
-07:41:46 [reply] : === Reply sent to 1528600: ===
-
-07:41:46 [reply] : Клиент с картой Array заморожен!
-07:41:46 [reply] : =================================================
-
-07:42:46 [parseCommand] : [INFO] Looking up for commands in text...
-07:42:46 [parseCommand] : [INFO] Testing message `Заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:42:46 [parseCommand] : === Matches found:: ===
-
-07:42:46 [parseCommand] : Array
-(
-    [0] => 1243
-)
-
-07:42:46 [parseCommand] : =================================================
-
-07:42:46 [reply] : === Reply sent to 1528600: ===
-
-07:42:46 [reply] : Клиент с картой 1243 заморожен!
-07:42:46 [reply] : =================================================
-
-07:42:57 [parseCommand] : [INFO] Looking up for commands in text...
-07:42:57 [parseCommand] : [INFO] Testing message `Заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:42:57 [parseCommand] : === Matches found:: ===
-
-07:42:57 [parseCommand] : Array
-(
-    [0] => 1243
-)
-
-07:42:57 [parseCommand] : =================================================
-
-07:42:57 [reply] : === Reply sent to 1528600: ===
-
-07:42:57 [reply] : Клиент с картой 1243 заморожен!
-07:42:57 [reply] : =================================================
-
-07:44:46 [parseCommand] : [INFO] Looking up for commands in text...
-07:44:46 [parseCommand] : [INFO] Testing message `Заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:44:46 [parseCommand] : === Matches found:: ===
-
-07:44:46 [parseCommand] : Array
-(
-    [0] => 1243
-)
-
-07:44:46 [parseCommand] : =================================================
-
-07:44:46 [reply] : === Reply sent to 1528600: ===
-
-07:44:46 [reply] : Клиент с картой 1243 заморожен!
-07:44:46 [reply] : =================================================
-
-07:52:50 [parseCommand] : [INFO] Looking up for commands in text...
-07:52:50 [parseCommand] : [INFO] Testing message `заморозь 1234` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:52:50 [parseCommand] : === Matches found:: ===
-
-07:52:50 [parseCommand] : Array
-(
-    [0] => 1234
-)
-
-07:52:50 [parseCommand] : =================================================
-
-07:52:50 [reply] : === Reply sent to 1528600: ===
-
-07:52:50 [reply] : Клиент с номером карты 1234 не найден...
-07:52:50 [reply] : =================================================
-
-07:53:01 [parseCommand] : [INFO] Looking up for commands in text...
-07:53:01 [parseCommand] : [INFO] Testing message `заморозь 1234` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:53:01 [parseCommand] : === Matches found:: ===
-
-07:53:01 [parseCommand] : Array
-(
-    [0] => 1234
-)
-
-07:53:01 [parseCommand] : =================================================
-
-07:53:01 [reply] : === Reply sent to 1528600: ===
-
-07:53:01 [reply] : Клиент с номером карты 1234 не найден...
-07:53:01 [reply] : =================================================
-
-07:53:08 [parseCommand] : [INFO] Looking up for commands in text...
-07:53:08 [parseCommand] : [INFO] Testing message `заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:53:08 [parseCommand] : === Matches found:: ===
-
-07:53:08 [parseCommand] : Array
-(
-    [0] => 1999
-)
-
-07:53:08 [parseCommand] : =================================================
-
-07:53:08 [reply] : === Reply sent to 1528600: ===
-
-07:53:08 [reply] : Клиент с номером карты 1999 не найден...
-07:53:08 [reply] : =================================================
-
-07:53:18 [parseCommand] : [INFO] Looking up for commands in text...
-07:53:18 [parseCommand] : [INFO] Testing message `заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:53:18 [parseCommand] : === Matches found:: ===
-
-07:53:18 [parseCommand] : Array
-(
-    [0] => 1999
-)
-
-07:53:18 [parseCommand] : =================================================
-
-07:53:18 [reply] : === Reply sent to 1528600: ===
-
-07:53:18 [reply] : Клиент с номером карты 1999 не найден...
-07:53:18 [reply] : =================================================
-
-07:53:26 [parseCommand] : [INFO] Looking up for commands in text...
-07:53:26 [parseCommand] : [INFO] Testing message `заморозь 2020` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:53:26 [parseCommand] : === Matches found:: ===
-
-07:53:26 [parseCommand] : Array
-(
-    [0] => 2020
-)
-
-07:53:26 [parseCommand] : =================================================
-
-07:53:26 [reply] : === Reply sent to 1528600: ===
-
-07:53:26 [reply] : Клиент с номером карты 2020 не найден...
-07:53:26 [reply] : =================================================
-
-07:53:37 [parseCommand] : [INFO] Looking up for commands in text...
-07:53:37 [parseCommand] : [INFO] Testing message `заморозь 2020` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:53:37 [parseCommand] : === Matches found:: ===
-
-07:53:37 [parseCommand] : Array
-(
-    [0] => 2020
-)
-
-07:53:37 [parseCommand] : =================================================
-
-07:53:37 [reply] : === Reply sent to 1528600: ===
-
-07:53:37 [reply] : Клиент с номером карты 2020 не найден...
-07:53:37 [reply] : =================================================
-
-07:54:46 [parseCommand] : [INFO] Looking up for commands in text...
-07:54:46 [parseCommand] : [INFO] Testing message `Заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:54:46 [parseCommand] : === Matches found:: ===
+10:46:25 [handleEvent] : === Event dispatched:: ===
 
-07:54:46 [parseCommand] : Array
-(
-    [0] => 1243
-)
-
-07:54:46 [parseCommand] : =================================================
-
-07:54:46 [reply] : === Reply sent to 1528600: ===
-
-07:54:46 [reply] : Заморозь 1243
-07:54:46 [reply] : =================================================
-
-07:54:51 [parseCommand] : [INFO] Looking up for commands in text...
-07:54:51 [parseCommand] : [INFO] Testing message `Заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:54:51 [parseCommand] : === Matches found:: ===
-
-07:54:51 [parseCommand] : Array
-(
-    [0] => 1243
-)
-
-07:54:51 [parseCommand] : =================================================
-
-07:54:51 [reply] : === Reply sent to 1528600: ===
-
-07:54:51 [reply] : Заморозь 1243
-07:54:51 [reply] : =================================================
-
-07:54:56 [parseCommand] : [INFO] Looking up for commands in text...
-07:54:56 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:54:56 [parseCommand] : === Matches found:: ===
-
-07:54:56 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:46:25 [handleEvent] : message_new
+10:46:25 [handleEvent] : =================================================
 
-07:54:56 [parseCommand] : =================================================
+10:46:36 [handleEvent] : === Event dispatched:: ===
 
-07:54:56 [reply] : === Reply sent to 1528600: ===
+10:46:36 [handleEvent] : message_new
+10:46:36 [handleEvent] : =================================================
 
-07:54:56 [reply] : Заморозь 1999
-07:54:56 [reply] : =================================================
+10:47:13 [handleEvent] : === Event dispatched:: ===
 
-07:55:01 [parseCommand] : [INFO] Looking up for commands in text...
-07:55:01 [parseCommand] : [INFO] Testing message `Заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:55:01 [parseCommand] : === Matches found:: ===
+10:47:13 [handleEvent] : message_new
+10:47:13 [handleEvent] : =================================================
 
-07:55:01 [parseCommand] : Array
-(
-    [0] => 1243
-)
+10:47:22 [handleEvent] : === Event dispatched:: ===
 
-07:55:01 [parseCommand] : =================================================
+10:47:22 [handleEvent] : message_new
+10:47:22 [handleEvent] : =================================================
 
-07:55:01 [reply] : === Reply sent to 1528600: ===
+10:47:48 [handleEvent] : === Event dispatched:: ===
 
-07:55:01 [reply] : Заморозь 1243
-07:55:01 [reply] : =================================================
+10:47:48 [handleEvent] : message_new
+10:47:48 [handleEvent] : =================================================
 
-07:55:01 [parseCommand] : [INFO] Looking up for commands in text...
-07:55:01 [parseCommand] : [INFO] Testing message `заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:55:01 [parseCommand] : === Matches found:: ===
+10:47:57 [handleEvent] : === Event dispatched:: ===
 
-07:55:01 [parseCommand] : Array
-(
-    [0] => 1243
-)
+10:47:57 [handleEvent] : message_new
+10:47:57 [handleEvent] : =================================================
 
-07:55:01 [parseCommand] : =================================================
+10:48:12 [handleEvent] : === Event dispatched:: ===
 
-07:55:01 [reply] : === Reply sent to 1528600: ===
+10:48:12 [handleEvent] : message_new
+10:48:12 [handleEvent] : =================================================
 
-07:55:01 [reply] : заморозь 1243
-07:55:01 [reply] : =================================================
+10:48:22 [handleEvent] : === Event dispatched:: ===
 
-07:55:06 [parseCommand] : [INFO] Looking up for commands in text...
-07:55:06 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:55:06 [parseCommand] : === Matches found:: ===
+10:48:22 [handleEvent] : message_new
+10:48:22 [handleEvent] : =================================================
 
-07:55:06 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:49:06 [handleEvent] : === Event dispatched:: ===
 
-07:55:06 [parseCommand] : =================================================
+10:49:06 [handleEvent] : message_new
+10:49:06 [handleEvent] : =================================================
 
-07:55:06 [reply] : === Reply sent to 1528600: ===
+10:49:07 [isCommand] : [INFO] Check if the message is command...
+10:49:07 [isCommand] : [INFO] ...false
+10:49:07 [reply] : === Reply sent to 1528600: ===
 
-07:55:06 [reply] : Заморозь 1999
-07:55:06 [reply] : =================================================
+10:49:07 [reply] : Команда не распознана.
+10:49:07 [reply] : =================================================
 
-07:55:12 [parseCommand] : [INFO] Looking up for commands in text...
-07:55:12 [parseCommand] : [INFO] Testing message `заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:55:12 [parseCommand] : === Matches found:: ===
+10:49:16 [handleEvent] : === Event dispatched:: ===
 
-07:55:12 [parseCommand] : Array
-(
-    [0] => 1243
-)
+10:49:16 [handleEvent] : message_new
+10:49:16 [handleEvent] : =================================================
 
-07:55:12 [parseCommand] : =================================================
+10:49:17 [isCommand] : [INFO] Check if the message is command...
+10:49:17 [isCommand] : [INFO] ...false
+10:49:17 [reply] : === Reply sent to 1528600: ===
 
-07:55:12 [reply] : === Reply sent to 1528600: ===
+10:49:17 [reply] : Команда не распознана, Roman.
+10:49:17 [reply] : =================================================
 
-07:55:12 [reply] : заморозь 1243
-07:55:12 [reply] : =================================================
+10:49:36 [handleEvent] : === Event dispatched:: ===
 
-07:55:57 [parseCommand] : [INFO] Looking up for commands in text...
-07:55:57 [parseCommand] : [INFO] Testing message `Заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:55:57 [parseCommand] : === Matches found:: ===
+10:49:36 [handleEvent] : message_new
+10:49:36 [handleEvent] : =================================================
 
-07:55:57 [parseCommand] : Array
-(
-    [0] => 1243
-)
+10:49:37 [isCommand] : [INFO] Check if the message is command...
+10:49:37 [isCommand] : [INFO] ...false
+10:49:37 [reply] : === Reply sent to 1528600: ===
 
-07:55:57 [parseCommand] : =================================================
+10:49:37 [reply] : Команда не распознана.
+10:49:37 [reply] : =================================================
 
-07:55:57 [reply] : === Reply sent to 1528600: ===
+10:50:06 [handleEvent] : === Event dispatched:: ===
 
-07:55:57 [reply] : Клиент с номером карты 1243 не найден...
-07:55:57 [reply] : =================================================
+10:50:06 [handleEvent] : message_new
+10:50:06 [handleEvent] : =================================================
 
-07:56:01 [parseCommand] : [INFO] Looking up for commands in text...
-07:56:01 [parseCommand] : [INFO] Testing message `заморозь 1234` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:56:01 [parseCommand] : === Matches found:: ===
+10:50:06 [isCommand] : [INFO] Check if the message `/тест` is command...
+10:50:06 [isCommand] : [INFO] ...false
+10:50:06 [reply] : === Reply sent to 1528600: ===
 
-07:56:01 [parseCommand] : Array
-(
-    [0] => 1234
-)
+10:50:06 [reply] : Команда не распознана, Roman.
+10:50:06 [reply] : =================================================
 
-07:56:01 [parseCommand] : =================================================
+10:50:16 [handleEvent] : === Event dispatched:: ===
 
-07:56:01 [reply] : === Reply sent to 1528600: ===
+10:50:16 [handleEvent] : message_new
+10:50:16 [handleEvent] : =================================================
 
-07:56:01 [reply] : Клиент с номером карты 1234 не найден...
-07:56:01 [reply] : =================================================
+10:50:17 [isCommand] : [INFO] Check if the message `/тест` is command...
+10:50:17 [isCommand] : [INFO] ...false
+10:50:17 [reply] : === Reply sent to 1528600: ===
 
-07:56:18 [parseCommand] : [INFO] Looking up for commands in text...
-07:56:18 [parseCommand] : [INFO] Testing message `заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:56:18 [parseCommand] : === Matches found:: ===
+10:50:17 [reply] : Команда не распознана.
+10:50:17 [reply] : =================================================
 
-07:56:18 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:50:21 [handleEvent] : === Event dispatched:: ===
 
-07:56:18 [parseCommand] : =================================================
+10:50:21 [handleEvent] : message_new
+10:50:21 [handleEvent] : =================================================
 
-07:56:18 [reply] : === Reply sent to 1528600: ===
+10:50:22 [isCommand] : [INFO] Check if the message `/теств` is command...
+10:50:22 [isCommand] : [INFO] ...false
+10:50:22 [reply] : === Reply sent to 1528600: ===
 
-07:56:18 [reply] : Клиент с номером карты 1999 не найден...
-07:56:18 [reply] : =================================================
+10:50:22 [reply] : Команда не распознана.
+10:50:22 [reply] : =================================================
 
-07:56:37 [parseCommand] : [INFO] Looking up for commands in text...
-07:56:37 [parseCommand] : [INFO] Testing message `заморозь 2020` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:56:37 [parseCommand] : === Matches found:: ===
+10:50:22 [handleEvent] : === Event dispatched:: ===
 
-07:56:37 [parseCommand] : Array
-(
-    [0] => 2020
-)
+10:50:22 [handleEvent] : message_new
+10:50:22 [handleEvent] : =================================================
 
-07:56:37 [parseCommand] : =================================================
+10:50:23 [isCommand] : [INFO] Check if the message `/тест` is command...
+10:50:23 [isCommand] : [INFO] ...false
+10:50:23 [reply] : === Reply sent to 1528600: ===
 
-07:56:37 [command] : [INFO] Вызываем метод commandPause
-07:56:37 [command] : =================================================
+10:50:23 [reply] : Команда не распознана.
+10:50:23 [reply] : =================================================
 
-07:56:37 [command] : Array
-(
-    [0] => 2020
-)
+10:50:29 [handleEvent] : === Event dispatched:: ===
 
-07:56:37 [command] : =================================================
+10:50:29 [handleEvent] : message_new
+10:50:29 [handleEvent] : =================================================
 
-07:56:37 [reply] : === Reply sent to 1528600: ===
+10:50:29 [isCommand] : [INFO] Check if the message `тест` is command...
+10:50:29 [isCommand] : [INFO] ...false
+10:50:29 [reply] : === Reply sent to 1528600: ===
 
-07:56:37 [reply] : Клиент с номером карты 2020 не найден...
-07:56:37 [reply] : =================================================
+10:50:29 [reply] : Команда не распознана.
+10:50:29 [reply] : =================================================
 
-07:56:42 [parseCommand] : [INFO] Looking up for commands in text...
-07:56:42 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:56:42 [parseCommand] : === Matches found:: ===
+10:50:38 [handleEvent] : === Event dispatched:: ===
 
-07:56:42 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:50:38 [handleEvent] : message_new
+10:50:38 [handleEvent] : =================================================
 
-07:56:42 [parseCommand] : =================================================
+10:50:39 [isCommand] : [INFO] Check if the message `тест` is command...
+10:50:39 [isCommand] : [INFO] ...false
+10:50:39 [reply] : === Reply sent to 1528600: ===
 
-07:56:42 [command] : [INFO] Вызываем метод commandPause
-07:56:42 [command] : =================================================
+10:50:39 [reply] : Команда не распознана, Roman.
+10:50:39 [reply] : =================================================
 
-07:56:42 [command] : Array
-(
-    [0] => 1999
-)
+10:50:57 [handleEvent] : === Event dispatched:: ===
 
-07:56:42 [command] : =================================================
+10:50:57 [handleEvent] : message_new
+10:50:57 [handleEvent] : =================================================
 
-07:56:42 [reply] : === Reply sent to 1528600: ===
+10:50:58 [isCommand] : [INFO] Check if the message `/тест` is command...
+10:50:58 [_extractCommandName] : === Exrtacted command name:: ===
 
-07:56:42 [reply] : Клиент с номером карты 1999 не найден...
-07:56:42 [reply] : =================================================
+10:50:58 [_extractCommandName] : /тест
+10:50:58 [_extractCommandName] : =================================================
 
-07:56:52 [parseCommand] : [INFO] Looking up for commands in text...
-07:56:52 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:56:52 [parseCommand] : === Matches found:: ===
+10:50:58 [isCommand] : [INFO] ...true
+10:50:58 [executeCommand] : [INFO] Execute command...
+10:52:12 [handleEvent] : === Event dispatched:: ===
 
-07:56:52 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:52:12 [handleEvent] : message_new
+10:52:12 [handleEvent] : =================================================
 
-07:56:52 [parseCommand] : =================================================
+10:52:12 [isCommand] : [INFO] Check if the message `тест` is command...
+10:52:12 [_extractCommandName] : === Exrtacted command name:: ===
 
-07:56:52 [command] : [INFO] Вызываем метод commandPause
-07:56:52 [command] : =================================================
+10:52:12 [_extractCommandName] : тест
+10:52:12 [_extractCommandName] : =================================================
 
-07:56:52 [command] : Array
-(
-    [0] => 1999
-)
+10:52:12 [isCommand] : [INFO] ...true
+10:52:12 [executeCommand] : [INFO] Execute command...
+10:52:16 [handleEvent] : === Event dispatched:: ===
 
-07:56:52 [command] : =================================================
+10:52:16 [handleEvent] : message_new
+10:52:16 [handleEvent] : =================================================
 
-07:56:52 [reply] : === Reply sent to 1528600: ===
+10:52:17 [isCommand] : [INFO] Check if the message `/тест` is command...
+10:52:17 [_extractCommandName] : === Exrtacted command name:: ===
 
-07:56:52 [reply] : Клиент с номером карты 1999 не найден...
-07:56:52 [reply] : =================================================
+10:52:17 [_extractCommandName] : /тест
+10:52:17 [_extractCommandName] : =================================================
 
-07:57:32 [parseCommand] : [INFO] Looking up for commands in text...
-07:57:32 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:57:32 [parseCommand] : === Matches found:: ===
+10:52:17 [isCommand] : [INFO] ...true
+10:52:17 [executeCommand] : [INFO] Execute command...
+10:52:22 [handleEvent] : === Event dispatched:: ===
 
-07:57:32 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:52:22 [handleEvent] : message_new
+10:52:22 [handleEvent] : =================================================
 
-07:57:32 [parseCommand] : =================================================
+10:52:23 [isCommand] : [INFO] Check if the message `тест` is command...
+10:52:23 [_extractCommandName] : === Exrtacted command name:: ===
 
-07:57:32 [command] : [INFO] Вызываем метод commandPause
-07:57:32 [command] : =================================================
+10:52:23 [_extractCommandName] : тест
+10:52:23 [_extractCommandName] : =================================================
 
-07:57:32 [command] : 1999
-07:57:32 [command] : =================================================
+10:52:23 [isCommand] : [INFO] ...true
+10:52:23 [executeCommand] : [INFO] Execute command...
+10:53:01 [handleEvent] : === Event dispatched:: ===
 
-07:57:32 [reply] : === Reply sent to 1528600: ===
+10:53:01 [handleEvent] : message_new
+10:53:01 [handleEvent] : =================================================
 
-07:57:32 [reply] : Клиент с номером карты 1999 не найден...
-07:57:32 [reply] : =================================================
+10:53:01 [isCommand] : [INFO] Check if the message `тест` is command...
+10:53:01 [isCommand] : [INFO] ...false
+10:53:01 [reply] : === Reply sent to 1528600: ===
 
-07:57:42 [parseCommand] : [INFO] Looking up for commands in text...
-07:57:42 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:57:42 [parseCommand] : === Matches found:: ===
+10:53:01 [reply] : Команда не распознана.
+10:53:01 [reply] : =================================================
 
-07:57:42 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:53:04 [handleEvent] : === Event dispatched:: ===
 
-07:57:42 [parseCommand] : =================================================
+10:53:04 [handleEvent] : message_new
+10:53:04 [handleEvent] : =================================================
 
-07:57:42 [command] : [INFO] Вызываем метод commandPause
-07:57:42 [command] : =================================================
+10:53:04 [isCommand] : [INFO] Check if the message `/тест` is command...
+10:53:04 [_extractCommandName] : === Exrtacted command name:: ===
 
-07:57:42 [command] : 1999
-07:57:42 [command] : =================================================
+10:53:04 [_extractCommandName] : тест
+10:53:04 [_extractCommandName] : =================================================
 
-07:57:42 [reply] : === Reply sent to 1528600: ===
+10:53:04 [isCommand] : [INFO] ...true
+10:53:04 [executeCommand] : [INFO] Execute command...
+10:53:14 [handleEvent] : === Event dispatched:: ===
 
-07:57:42 [reply] : Клиент с номером карты 1999 не найден...
-07:57:42 [reply] : =================================================
+10:53:14 [handleEvent] : message_new
+10:53:14 [handleEvent] : =================================================
 
-07:58:01 [parseCommand] : [INFO] Looking up for commands in text...
-07:58:01 [parseCommand] : [INFO] Testing message `Заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:58:01 [parseCommand] : === Matches found:: ===
+10:53:15 [isCommand] : [INFO] Check if the message `/тест` is command...
+10:53:15 [_extractCommandName] : === Exrtacted command name:: ===
 
-07:58:01 [parseCommand] : Array
-(
-    [0] => 1243
-)
+10:53:15 [_extractCommandName] : тест
+10:53:15 [_extractCommandName] : =================================================
 
-07:58:01 [parseCommand] : =================================================
+10:53:15 [isCommand] : [INFO] ...true
+10:53:15 [executeCommand] : [INFO] Execute command...
+10:53:16 [handleEvent] : === Event dispatched:: ===
 
-07:58:01 [command] : [INFO] Вызываем метод commandPause
-07:58:01 [command] : =================================================
+10:53:16 [handleEvent] : message_new
+10:53:16 [handleEvent] : =================================================
 
-07:58:01 [command] : 1243
-07:58:01 [command] : =================================================
+10:53:17 [isCommand] : [INFO] Check if the message `/тест` is command...
+10:53:17 [_extractCommandName] : === Exrtacted command name:: ===
 
-07:58:01 [reply] : === Reply sent to 1528600: ===
+10:53:17 [_extractCommandName] : тест
+10:53:17 [_extractCommandName] : =================================================
 
-07:58:01 [reply] : Клиент с номером карты 1243 не найден...
-07:58:01 [reply] : =================================================
+10:53:17 [isCommand] : [INFO] ...true
+10:53:17 [executeCommand] : [INFO] Execute command...
+10:53:25 [handleEvent] : === Event dispatched:: ===
 
-07:58:06 [parseCommand] : [INFO] Looking up for commands in text...
-07:58:06 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:58:06 [parseCommand] : === Matches found:: ===
+10:53:25 [handleEvent] : message_new
+10:53:25 [handleEvent] : =================================================
 
-07:58:06 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:53:25 [isCommand] : [INFO] Check if the message `/заморозь 135` is command...
+10:53:25 [_extractCommandName] : === Exrtacted command name:: ===
 
-07:58:06 [parseCommand] : =================================================
+10:53:25 [_extractCommandName] : заморозь
+10:53:25 [_extractCommandName] : =================================================
 
-07:58:06 [command] : [INFO] Вызываем метод commandPause
-07:58:06 [command] : =================================================
+10:53:25 [isCommand] : [INFO] ...true
+10:53:25 [executeCommand] : [INFO] Execute command...
+10:53:35 [handleEvent] : === Event dispatched:: ===
 
-07:58:06 [command] : 1999
-07:58:06 [command] : =================================================
+10:53:35 [handleEvent] : message_new
+10:53:35 [handleEvent] : =================================================
 
-07:58:06 [reply] : === Reply sent to 1528600: ===
+10:53:36 [isCommand] : [INFO] Check if the message `/заморозь 135` is command...
+10:53:36 [_extractCommandName] : === Exrtacted command name:: ===
 
-07:58:06 [reply] : Клиент с номером карты 1999 не найден...
-07:58:06 [reply] : =================================================
+10:53:36 [_extractCommandName] : заморозь
+10:53:36 [_extractCommandName] : =================================================
 
-07:58:12 [parseCommand] : [INFO] Looking up for commands in text...
-07:58:12 [parseCommand] : [INFO] Testing message `заморозь 1243` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:58:12 [parseCommand] : === Matches found:: ===
+10:53:36 [isCommand] : [INFO] ...true
+10:53:36 [executeCommand] : [INFO] Execute command...
+10:53:38 [handleEvent] : === Event dispatched:: ===
 
-07:58:12 [parseCommand] : Array
-(
-    [0] => 1243
-)
+10:53:38 [handleEvent] : message_new
+10:53:38 [handleEvent] : =================================================
 
-07:58:12 [parseCommand] : =================================================
+10:53:39 [isCommand] : [INFO] Check if the message `тест` is command...
+10:53:39 [isCommand] : [INFO] ...false
+10:53:39 [reply] : === Reply sent to 1528600: ===
 
-07:58:12 [command] : [INFO] Вызываем метод commandPause
-07:58:12 [reply] : === Reply sent to 1528600: ===
+10:53:39 [reply] : Команда не распознана.
+10:53:39 [reply] : =================================================
 
-07:58:12 [reply] : Клиент с номером карты 1243 не найден...
-07:58:12 [reply] : =================================================
+10:55:22 [handleEvent] : === Event dispatched:: ===
 
-07:59:16 [parseCommand] : [INFO] Looking up for commands in text...
-07:59:16 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:59:16 [parseCommand] : === Matches found:: ===
+10:55:22 [handleEvent] : message_new
+10:55:22 [handleEvent] : =================================================
 
-07:59:16 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:55:23 [isCommand] : [INFO] Check if the message `тест` is command...
+10:55:23 [isCommand] : [INFO] ...false
+10:55:23 [reply] : === Reply sent to 1528600: ===
 
-07:59:16 [parseCommand] : =================================================
+10:55:23 [reply] : Команда не распознана.
+10:55:23 [reply] : =================================================
 
-07:59:26 [parseCommand] : [INFO] Looking up for commands in text...
-07:59:26 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:59:26 [parseCommand] : === Matches found:: ===
+10:56:03 [handleEvent] : === Event dispatched:: ===
 
-07:59:26 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:56:03 [handleEvent] : message_new
+10:56:03 [handleEvent] : =================================================
 
-07:59:26 [parseCommand] : =================================================
+10:56:04 [isCommand] : [INFO] Check if the message `/заморозка 1245` is command...
+10:56:04 [_extractCommandName] : === Exrtacted command:: ===
 
-07:59:26 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-07:59:26 [command] : [INFO] Вызываем метод commandPause
-07:59:26 [reply] : === Reply sent to 1528600: ===
+10:56:04 [_extractCommandName] : заморозка
+10:56:04 [_extractCommandName] : =================================================
 
-07:59:26 [reply] : Клиент с номером карты 1999 не найден...
-07:59:26 [reply] : =================================================
+10:56:04 [isCommand] : [INFO] ...true
+10:56:04 [executeCommand] : [INFO] Execute command...
+10:56:13 [handleEvent] : === Event dispatched:: ===
 
-07:59:30 [parseCommand] : [INFO] Looking up for commands in text...
-07:59:30 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:59:30 [parseCommand] : === Matches found:: ===
+10:56:13 [handleEvent] : message_new
+10:56:13 [handleEvent] : =================================================
 
-07:59:30 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:56:14 [isCommand] : [INFO] Check if the message `/заморозка 1245` is command...
+10:56:14 [_extractCommandName] : === Exrtacted command:: ===
 
-07:59:30 [parseCommand] : =================================================
+10:56:14 [_extractCommandName] : заморозка
+10:56:14 [_extractCommandName] : =================================================
 
-07:59:30 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-07:59:30 [command] : [INFO] Вызываем метод commandPause
-07:59:30 [reply] : === Reply sent to 1528600: ===
+10:56:14 [isCommand] : [INFO] ...true
+10:56:14 [executeCommand] : [INFO] Execute command...
+10:56:14 [handleEvent] : === Event dispatched:: ===
 
-07:59:30 [reply] : Клиент с номером карты 1999 не найден...
-07:59:30 [reply] : =================================================
+10:56:14 [handleEvent] : message_new
+10:56:14 [handleEvent] : =================================================
 
-07:59:40 [parseCommand] : [INFO] Looking up for commands in text...
-07:59:40 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:59:40 [parseCommand] : === Matches found:: ===
+10:56:15 [isCommand] : [INFO] Check if the message `/тест` is command...
+10:56:15 [_extractCommandName] : === Exrtacted command:: ===
 
-07:59:40 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:56:15 [_extractCommandName] : тест
+10:56:15 [_extractCommandName] : =================================================
 
-07:59:40 [parseCommand] : =================================================
+10:56:15 [isCommand] : [INFO] ...true
+10:56:15 [executeCommand] : [INFO] Execute command...
+10:56:35 [handleEvent] : === Event dispatched:: ===
 
-07:59:40 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-07:59:40 [command] : [INFO] Вызываем метод commandPause
-07:59:40 [reply] : === Reply sent to 1528600: ===
+10:56:35 [handleEvent] : message_new
+10:56:35 [handleEvent] : =================================================
 
-07:59:40 [reply] : Клиент с номером карты 1999 не найден...
-07:59:40 [reply] : =================================================
+10:56:36 [isCommand] : [INFO] Check if the message `/заморозь 135` is command...
+10:56:36 [_extractCommandName] : === Exrtacted command:: ===
 
-07:59:52 [parseCommand] : [INFO] Looking up for commands in text...
-07:59:52 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-07:59:52 [parseCommand] : === Matches found:: ===
+10:56:36 [_extractCommandName] : заморозь
+10:56:36 [_extractCommandName] : =================================================
 
-07:59:52 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:56:36 [isCommand] : [INFO] ...true
+10:56:36 [executeCommand] : [INFO] Execute command...
+10:57:01 [handleEvent] : === Event dispatched:: ===
 
-07:59:52 [parseCommand] : =================================================
+10:57:01 [handleEvent] : message_new
+10:57:01 [handleEvent] : =================================================
 
-07:59:52 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-07:59:52 [command] : [INFO] Вызываем метод commandPause
-07:59:52 [reply] : === Reply sent to 1528600: ===
+10:57:01 [isCommand] : [INFO] Check if the message `/заморозка 1245` is command...
+10:57:01 [_extractCommandName] : === Exrtacted command:: ===
 
-07:59:52 [reply] : Клиент с номером карты 1999 не найден...
-07:59:52 [reply] : =================================================
+10:57:01 [_extractCommandName] : заморозка
+10:57:01 [_extractCommandName] : =================================================
 
-08:00:41 [parseCommand] : [INFO] Looking up for commands in text...
-08:00:41 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:00:41 [parseCommand] : === Matches found:: ===
+10:57:01 [isCommand] : [INFO] ...true
+10:57:01 [executeCommand] : [INFO] Execute command...
+10:57:01 [executeCommand] : === Loaded commands:: ===
 
-08:00:41 [parseCommand] : Array
+10:57:01 [executeCommand] : Array
 (
-    [0] => 1999
 )
 
-08:00:41 [parseCommand] : =================================================
+10:57:01 [executeCommand] : =================================================
 
-08:00:41 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:00:41 [command] : [INFO] Вызываем метод commandPause
-08:00:41 [reply] : === Reply sent to 1528600: ===
+10:58:18 [handleEvent] : === Event dispatched:: ===
 
-08:00:41 [reply] : Клиент с номером карты 1999 не найден...
-08:00:41 [reply] : =================================================
+10:58:18 [handleEvent] : message_new
+10:58:18 [handleEvent] : =================================================
 
-08:00:42 [parseCommand] : [INFO] Looking up for commands in text...
-08:00:42 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:00:42 [parseCommand] : === Matches found:: ===
+10:58:18 [isCommand] : [INFO] Check if the message `/заморозка 1245` is command...
+10:58:18 [_extractCommandName] : === Exrtacted command:: ===
 
-08:00:42 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:58:18 [_extractCommandName] : заморозка
+10:58:18 [_extractCommandName] : =================================================
 
-08:00:42 [parseCommand] : =================================================
+10:58:18 [isCommand] : [INFO] ...true
+10:58:18 [executeCommand] : [INFO] Execute command...
+10:58:18 [executeCommand] : === Loaded commands:: ===
 
-08:00:42 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:00:42 [command] : [INFO] Вызываем метод commandPause
-08:00:42 [reply] : === Reply sent to 1528600: ===
+10:58:18 [executeCommand] : 
+10:58:18 [executeCommand] : =================================================
 
-08:00:42 [reply] : Клиент с номером карты 1999 не найден...
-08:00:42 [reply] : =================================================
+10:58:28 [handleEvent] : === Event dispatched:: ===
 
-08:00:51 [parseCommand] : [INFO] Looking up for commands in text...
-08:00:51 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:00:51 [parseCommand] : === Matches found:: ===
+10:58:28 [handleEvent] : message_new
+10:58:28 [handleEvent] : =================================================
 
-08:00:51 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:58:29 [isCommand] : [INFO] Check if the message `/заморозка 1245` is command...
+10:58:29 [_extractCommandName] : === Exrtacted command:: ===
 
-08:00:51 [parseCommand] : =================================================
+10:58:29 [_extractCommandName] : заморозка
+10:58:29 [_extractCommandName] : =================================================
 
-08:00:51 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:00:51 [command] : [INFO] Вызываем метод commandPause
-08:00:51 [reply] : === Reply sent to 1528600: ===
+10:58:29 [isCommand] : [INFO] ...true
+10:58:29 [executeCommand] : [INFO] Execute command...
+10:58:29 [executeCommand] : === Loaded commands:: ===
 
-08:00:51 [reply] : Клиент с номером карты 1999 не найден...
-08:00:51 [reply] : =================================================
+10:58:29 [executeCommand] : 
+10:58:29 [executeCommand] : =================================================
 
-08:01:02 [parseCommand] : [INFO] Looking up for commands in text...
-08:01:02 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:01:02 [parseCommand] : === Matches found:: ===
+10:59:13 [handleEvent] : === Event dispatched:: ===
 
-08:01:02 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:59:13 [handleEvent] : message_new
+10:59:13 [handleEvent] : =================================================
 
-08:01:02 [parseCommand] : =================================================
+10:59:14 [isCommand] : [INFO] Check if the message `/заморозка 1245` is command...
+10:59:14 [_extractCommandName] : === Exrtacted command:: ===
 
-08:01:02 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:01:02 [command] : [INFO] Вызываем метод commandPause
-08:01:02 [reply] : === Reply sent to 1528600: ===
+10:59:14 [_extractCommandName] : заморозка
+10:59:14 [_extractCommandName] : =================================================
 
-08:01:02 [reply] : Клиент с номером карты 1999 не найден...
-08:01:02 [reply] : =================================================
+10:59:14 [isCommand] : [INFO] ...true
+10:59:14 [executeCommand] : [INFO] Execute command...
+10:59:14 [executeCommand] : === Loaded commands:: ===
 
-08:01:13 [parseCommand] : [INFO] Looking up for commands in text...
-08:01:13 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:01:13 [parseCommand] : === Matches found:: ===
+10:59:14 [executeCommand] : 
+10:59:14 [executeCommand] : =================================================
 
-08:01:13 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:59:36 [handleEvent] : === Event dispatched:: ===
 
-08:01:13 [parseCommand] : =================================================
+10:59:36 [handleEvent] : message_new
+10:59:36 [handleEvent] : =================================================
 
-08:01:13 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:01:13 [command] : [INFO] Вызываем метод commandPause
-08:01:13 [reply] : === Reply sent to 1528600: ===
+10:59:36 [isCommand] : [INFO] Check if the message `/заморозка 1245` is command...
+10:59:36 [_extractCommandName] : === Exrtacted command:: ===
 
-08:01:13 [reply] : Клиент с номером карты 1999 не найден...
-08:01:13 [reply] : =================================================
+10:59:36 [_extractCommandName] : заморозка
+10:59:36 [_extractCommandName] : =================================================
 
-08:02:00 [parseCommand] : [INFO] Looking up for commands in text...
-08:02:00 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:02:00 [parseCommand] : === Matches found:: ===
+10:59:36 [isCommand] : [INFO] ...true
+10:59:36 [executeCommand] : [INFO] Execute command...
+10:59:36 [executeCommand] : === Loaded commands:: ===
 
-08:02:00 [parseCommand] : Array
+10:59:36 [executeCommand] : Array
 (
-    [0] => 1999
+    [0] => RomanBots\Commands\TestCommand
+    [1] => RomanBots\Commands\HoldCommand
 )
-
-08:02:00 [parseCommand] : =================================================
-
-08:02:00 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:02:00 [command] : [INFO] Вызываем метод commandPause
-08:02:00 [reply] : === Reply sent to 1528600: ===
 
-08:02:00 [reply] : Клиент с номером карты 1999 не найден...
-08:02:00 [reply] : =================================================
+10:59:36 [executeCommand] : =================================================
 
-08:02:11 [parseCommand] : [INFO] Looking up for commands in text...
-08:02:11 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:02:11 [parseCommand] : === Matches found:: ===
+10:59:36 [__construct] : [INFO] Command test Class called...
+10:59:36 [__construct] : === test: ===
 
-08:02:11 [parseCommand] : Array
+10:59:36 [__construct] : RomanBots\Commands\TestCommand Object
 (
-    [0] => 1999
-)
-
-08:02:11 [parseCommand] : =================================================
+    [command:protected] => test
+    [regexp:protected] => тест.*
+    [user:protected] => stdClass Object
+        (
+            [id] => 1528600
+            [first_name] => Roman
+            [last_name] => Dots
+        )
 
-08:02:11 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:02:11 [command] : [INFO] Вызываем метод commandPause
-08:02:11 [reply] : === Reply sent to 1528600: ===
+    [originalMessage:protected] => /заморозка 1245
+    [params:protected] => 
+    [bot:protected] => RomanBots\Bot\Bot Object
+        (
+            [vkApiToken:protected] => 2a4f020ca3ac6b989d51bf54125323155899debd21c24c12a403a3b7060caa571f23056a7e36a29e52c61
+            [vkCommunityConfirmationCode:protected] => b1d8183d
+            [vkSecret:protected] => zYbOYnxeVflOYEccTccq
+            [userId] => 1528600
+            [userData] => stdClass Object
+                (
+                    [id] => 1528600
+                    [first_name] => Roman
+                    [last_name] => Dots
+                )
 
-08:02:11 [reply] : Клиент с номером карты 1999 не найден...
-08:02:11 [reply] : =================================================
+            [userMessage] => /заморозка 1245
+            [commandInProgress:protected] => 
+        )
 
-08:02:26 [parseCommand] : [INFO] Looking up for commands in text...
-08:02:26 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:02:26 [parseCommand] : === Matches found:: ===
-
-08:02:26 [parseCommand] : Array
-(
-    [0] => 1999
 )
 
-08:02:26 [parseCommand] : =================================================
+10:59:36 [__construct] : =================================================
 
-08:02:26 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:02:26 [command] : [INFO] Вызываем метод commandPause
-08:02:26 [reply] : === Reply sent to 1528600: ===
+10:59:36 [executeCommand] : === RomanBots\Commands\TestCommand: ===
 
-08:02:26 [reply] : Клиент с номером карты 1999 не найден...
-08:02:26 [reply] : =================================================
-
-08:02:40 [parseCommand] : [INFO] Looking up for commands in text...
-08:02:40 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:02:40 [parseCommand] : === Matches found:: ===
-
-08:02:40 [parseCommand] : Array
+10:59:36 [executeCommand] : RomanBots\Commands\TestCommand Object
 (
-    [0] => 1999
-)
-
-08:02:40 [parseCommand] : =================================================
+    [command:protected] => test
+    [regexp:protected] => тест.*
+    [user:protected] => stdClass Object
+        (
+            [id] => 1528600
+            [first_name] => Roman
+            [last_name] => Dots
+        )
 
-08:02:40 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:02:40 [command] : [INFO] Вызываем метод commandPause
-08:02:40 [reply] : === Reply sent to 1528600: ===
+    [originalMessage:protected] => /заморозка 1245
+    [params:protected] => 
+    [bot:protected] => RomanBots\Bot\Bot Object
+        (
+            [vkApiToken:protected] => 2a4f020ca3ac6b989d51bf54125323155899debd21c24c12a403a3b7060caa571f23056a7e36a29e52c61
+            [vkCommunityConfirmationCode:protected] => b1d8183d
+            [vkSecret:protected] => zYbOYnxeVflOYEccTccq
+            [userId] => 1528600
+            [userData] => stdClass Object
+                (
+                    [id] => 1528600
+                    [first_name] => Roman
+                    [last_name] => Dots
+                )
 
-08:02:40 [reply] : Клиент с номером карты 1999 не найден...
-08:02:40 [reply] : =================================================
+            [userMessage] => /заморозка 1245
+            [commandInProgress:protected] => 
+        )
 
-08:03:34 [parseCommand] : [INFO] Looking up for commands in text...
-08:03:34 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:03:34 [parseCommand] : === Matches found:: ===
-
-08:03:34 [parseCommand] : Array
-(
-    [0] => 1999
 )
-
-08:03:34 [parseCommand] : =================================================
-
-08:03:34 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:03:34 [command] : [INFO] Вызываем метод commandPause
-08:03:34 [reply] : === Reply sent to 1528600: ===
 
-08:03:34 [reply] : Клиент с номером карты 1999 не найден...
-08:03:34 [reply] : =================================================
+10:59:36 [executeCommand] : =================================================
 
-08:03:44 [parseCommand] : [INFO] Looking up for commands in text...
-08:03:44 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:03:44 [parseCommand] : === Matches found:: ===
+10:59:36 [match] : [INFO] Testing message `/заморозка 1245` on regular exp `/^тест.*$/i` for command `test`
+10:59:36 [__construct] : [INFO] Command  Class called...
+10:59:36 [__construct] : =================================================
 
-08:03:44 [parseCommand] : Array
+10:59:36 [__construct] : RomanBots\Commands\HoldCommand Object
 (
-    [0] => 1999
-)
-
-08:03:44 [parseCommand] : =================================================
+    [regexp:protected] => заморо\S+\D*(\d+)\D*
+    [user:protected] => stdClass Object
+        (
+            [id] => 1528600
+            [first_name] => Roman
+            [last_name] => Dots
+        )
 
-08:03:44 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:03:44 [command] : [INFO] Вызываем метод commandPause
-08:03:44 [reply] : === Reply sent to 1528600: ===
+    [originalMessage:protected] => /заморозка 1245
+    [command:protected] => 
+    [params:protected] => 
+    [bot:protected] => RomanBots\Bot\Bot Object
+        (
+            [vkApiToken:protected] => 2a4f020ca3ac6b989d51bf54125323155899debd21c24c12a403a3b7060caa571f23056a7e36a29e52c61
+            [vkCommunityConfirmationCode:protected] => b1d8183d
+            [vkSecret:protected] => zYbOYnxeVflOYEccTccq
+            [userId] => 1528600
+            [userData] => stdClass Object
+                (
+                    [id] => 1528600
+                    [first_name] => Roman
+                    [last_name] => Dots
+                )
 
-08:03:44 [reply] : Клиент с номером карты 1999 не найден...
-08:03:44 [reply] : =================================================
+            [userMessage] => /заморозка 1245
+            [commandInProgress:protected] => 
+        )
 
-08:03:51 [parseCommand] : [INFO] Looking up for commands in text...
-08:03:51 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:03:51 [parseCommand] : === Matches found:: ===
-
-08:03:51 [parseCommand] : Array
-(
-    [0] => 1999
 )
 
-08:03:51 [parseCommand] : =================================================
+10:59:36 [__construct] : =================================================
 
-08:03:51 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:03:51 [command] : [INFO] Вызываем метод commandPause
-08:03:51 [reply] : === Reply sent to 1528600: ===
+10:59:36 [executeCommand] : === RomanBots\Commands\HoldCommand: ===
 
-08:03:51 [reply] : Клиент с номером карты 1999 не найден...
-08:03:51 [reply] : =================================================
-
-08:04:13 [parseCommand] : [INFO] Looking up for commands in text...
-08:04:13 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:04:13 [parseCommand] : === Matches found:: ===
-
-08:04:13 [parseCommand] : Array
+10:59:36 [executeCommand] : RomanBots\Commands\HoldCommand Object
 (
-    [0] => 1999
-)
+    [regexp:protected] => заморо\S+\D*(\d+)\D*
+    [user:protected] => stdClass Object
+        (
+            [id] => 1528600
+            [first_name] => Roman
+            [last_name] => Dots
+        )
 
-08:04:13 [parseCommand] : =================================================
+    [originalMessage:protected] => /заморозка 1245
+    [command:protected] => 
+    [params:protected] => 
+    [bot:protected] => RomanBots\Bot\Bot Object
+        (
+            [vkApiToken:protected] => 2a4f020ca3ac6b989d51bf54125323155899debd21c24c12a403a3b7060caa571f23056a7e36a29e52c61
+            [vkCommunityConfirmationCode:protected] => b1d8183d
+            [vkSecret:protected] => zYbOYnxeVflOYEccTccq
+            [userId] => 1528600
+            [userData] => stdClass Object
+                (
+                    [id] => 1528600
+                    [first_name] => Roman
+                    [last_name] => Dots
+                )
 
-08:04:22 [parseCommand] : [INFO] Looking up for commands in text...
-08:04:22 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:04:22 [parseCommand] : === Matches found:: ===
+            [userMessage] => /заморозка 1245
+            [commandInProgress:protected] => 
+        )
 
-08:04:22 [parseCommand] : Array
-(
-    [0] => 1999
 )
 
-08:04:22 [parseCommand] : =================================================
+10:59:36 [executeCommand] : =================================================
 
-08:04:22 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:04:22 [command] : [INFO] Вызываем метод commandPause
-08:04:22 [reply] : === Reply sent to 1528600: ===
-
-08:04:22 [reply] : Клиент с номером карты 1999 не найден...
-08:04:22 [reply] : =================================================
-
-08:04:33 [parseCommand] : [INFO] Looking up for commands in text...
-08:04:33 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:04:33 [parseCommand] : === Matches found:: ===
-
-08:04:33 [parseCommand] : Array
-(
-    [0] => 1999
-)
+10:59:36 [match] : [INFO] Testing message `/заморозка 1245` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command ``
+10:59:36 [handleEvent] : === Event dispatched:: ===
 
-08:04:33 [parseCommand] : =================================================
+10:59:36 [handleEvent] : message_new
+10:59:36 [handleEvent] : =================================================
 
-08:04:33 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:04:33 [command] : [INFO] Вызываем метод commandPause
-08:04:33 [reply] : === Reply sent to 1528600: ===
+10:59:37 [isCommand] : [INFO] Check if the message `/тест` is command...
+10:59:37 [_extractCommandName] : === Exrtacted command:: ===
 
-08:04:33 [reply] : Клиент с номером карты 1999 не найден...
-08:04:33 [reply] : =================================================
+10:59:37 [_extractCommandName] : тест
+10:59:37 [_extractCommandName] : =================================================
 
-08:05:11 [parseCommand] : [INFO] Looking up for commands in text...
-08:05:11 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:05:11 [parseCommand] : === Matches found:: ===
+10:59:37 [isCommand] : [INFO] ...true
+10:59:37 [executeCommand] : [INFO] Execute command...
+10:59:37 [executeCommand] : === Loaded commands:: ===
 
-08:05:11 [parseCommand] : Array
+10:59:37 [executeCommand] : Array
 (
-    [0] => 1999
+    [0] => RomanBots\Commands\TestCommand
+    [1] => RomanBots\Commands\HoldCommand
 )
-
-08:05:11 [parseCommand] : =================================================
 
-08:05:11 [connect] : [ERROR] Connection failed: Access denied for user 'root'@'localhost' (using password: NO)
-08:05:11 [command] : [INFO] Вызываем метод commandPause
-08:05:11 [reply] : === Reply sent to 1528600: ===
+10:59:37 [executeCommand] : =================================================
 
-08:05:11 [reply] : Клиент с номером карты 1999 не найден...
-08:05:11 [reply] : =================================================
+10:59:37 [__construct] : [INFO] Command test Class called...
+10:59:37 [__construct] : === test: ===
 
-08:05:47 [parseCommand] : [INFO] Looking up for commands in text...
-08:05:47 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:05:47 [parseCommand] : === Matches found:: ===
-
-08:05:47 [parseCommand] : Array
+10:59:37 [__construct] : RomanBots\Commands\TestCommand Object
 (
-    [0] => 1999
-)
+    [command:protected] => test
+    [regexp:protected] => тест.*
+    [user:protected] => stdClass Object
+        (
+            [id] => 1528600
+            [first_name] => Roman
+            [last_name] => Dots
+        )
 
-08:05:47 [parseCommand] : =================================================
+    [originalMessage:protected] => /тест
+    [params:protected] => 
+    [bot:protected] => RomanBots\Bot\Bot Object
+        (
+            [vkApiToken:protected] => 2a4f020ca3ac6b989d51bf54125323155899debd21c24c12a403a3b7060caa571f23056a7e36a29e52c61
+            [vkCommunityConfirmationCode:protected] => b1d8183d
+            [vkSecret:protected] => zYbOYnxeVflOYEccTccq
+            [userId] => 1528600
+            [userData] => stdClass Object
+                (
+                    [id] => 1528600
+                    [first_name] => Roman
+                    [last_name] => Dots
+                )
 
-08:05:47 [connect] : [ERROR] Connection failed: Access denied for user 'admin_bezpravil'@'tansultant.ru' (using password: YES)
-08:05:47 [command] : [INFO] Вызываем метод commandPause
-08:05:47 [reply] : === Reply sent to 1528600: ===
+            [userMessage] => /тест
+            [commandInProgress:protected] => 
+        )
 
-08:05:47 [reply] : Клиент с номером карты 1999 не найден...
-08:05:47 [reply] : =================================================
-
-08:05:57 [parseCommand] : [INFO] Looking up for commands in text...
-08:05:57 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:05:57 [parseCommand] : === Matches found:: ===
-
-08:05:57 [parseCommand] : Array
-(
-    [0] => 1999
 )
-
-08:05:57 [parseCommand] : =================================================
 
-08:05:57 [connect] : [ERROR] Connection failed: Access denied for user 'admin_bezpravil'@'tansultant.ru' (using password: YES)
-08:05:57 [command] : [INFO] Вызываем метод commandPause
-08:05:57 [reply] : === Reply sent to 1528600: ===
+10:59:37 [__construct] : =================================================
 
-08:05:57 [reply] : Клиент с номером карты 1999 не найден...
-08:05:57 [reply] : =================================================
+10:59:37 [executeCommand] : === RomanBots\Commands\TestCommand: ===
 
-08:06:01 [parseCommand] : [INFO] Looking up for commands in text...
-08:06:01 [parseCommand] : [INFO] Testing message `заморозь 1234` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:06:01 [parseCommand] : === Matches found:: ===
-
-08:06:01 [parseCommand] : Array
+10:59:37 [executeCommand] : RomanBots\Commands\TestCommand Object
 (
-    [0] => 1234
-)
-
-08:06:01 [parseCommand] : =================================================
-
-08:06:01 [connect] : [ERROR] Connection failed: Access denied for user 'admin_bezpravil'@'tansultant.ru' (using password: YES)
-08:06:01 [command] : [INFO] Вызываем метод commandPause
-08:06:01 [reply] : === Reply sent to 1528600: ===
+    [command:protected] => test
+    [regexp:protected] => тест.*
+    [user:protected] => stdClass Object
+        (
+            [id] => 1528600
+            [first_name] => Roman
+            [last_name] => Dots
+        )
 
-08:06:01 [reply] : Клиент с номером карты 1234 не найден...
-08:06:01 [reply] : =================================================
+    [originalMessage:protected] => /тест
+    [params:protected] => 
+    [bot:protected] => RomanBots\Bot\Bot Object
+        (
+            [vkApiToken:protected] => 2a4f020ca3ac6b989d51bf54125323155899debd21c24c12a403a3b7060caa571f23056a7e36a29e52c61
+            [vkCommunityConfirmationCode:protected] => b1d8183d
+            [vkSecret:protected] => zYbOYnxeVflOYEccTccq
+            [userId] => 1528600
+            [userData] => stdClass Object
+                (
+                    [id] => 1528600
+                    [first_name] => Roman
+                    [last_name] => Dots
+                )
 
-08:06:18 [parseCommand] : [INFO] Looking up for commands in text...
-08:06:18 [parseCommand] : [INFO] Testing message `заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:06:18 [parseCommand] : === Matches found:: ===
+            [userMessage] => /тест
+            [commandInProgress:protected] => 
+        )
 
-08:06:18 [parseCommand] : Array
-(
-    [0] => 1999
 )
-
-08:06:18 [parseCommand] : =================================================
 
-08:06:18 [connect] : [ERROR] Connection failed: Access denied for user 'admin_bezpravil'@'tansultant.ru' (using password: YES)
-08:06:18 [command] : [INFO] Вызываем метод commandPause
-08:06:18 [reply] : === Reply sent to 1528600: ===
+10:59:37 [executeCommand] : =================================================
 
-08:06:18 [reply] : Клиент с номером карты 1999 не найден...
-08:06:18 [reply] : =================================================
+10:59:37 [match] : [INFO] Testing message `/тест` on regular exp `/^тест.*$/i` for command `test`
+10:59:37 [__construct] : [INFO] Command  Class called...
+10:59:37 [__construct] : =================================================
 
-08:06:37 [parseCommand] : [INFO] Looking up for commands in text...
-08:06:37 [parseCommand] : [INFO] Testing message `заморозь 2020` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:06:37 [parseCommand] : === Matches found:: ===
-
-08:06:37 [parseCommand] : Array
+10:59:37 [__construct] : RomanBots\Commands\HoldCommand Object
 (
-    [0] => 2020
-)
+    [regexp:protected] => заморо\S+\D*(\d+)\D*
+    [user:protected] => stdClass Object
+        (
+            [id] => 1528600
+            [first_name] => Roman
+            [last_name] => Dots
+        )
 
-08:06:37 [parseCommand] : =================================================
+    [originalMessage:protected] => /тест
+    [command:protected] => 
+    [params:protected] => 
+    [bot:protected] => RomanBots\Bot\Bot Object
+        (
+            [vkApiToken:protected] => 2a4f020ca3ac6b989d51bf54125323155899debd21c24c12a403a3b7060caa571f23056a7e36a29e52c61
+            [vkCommunityConfirmationCode:protected] => b1d8183d
+            [vkSecret:protected] => zYbOYnxeVflOYEccTccq
+            [userId] => 1528600
+            [userData] => stdClass Object
+                (
+                    [id] => 1528600
+                    [first_name] => Roman
+                    [last_name] => Dots
+                )
 
-08:06:37 [connect] : [ERROR] Connection failed: Access denied for user 'admin_bezpravil'@'tansultant.ru' (using password: YES)
-08:06:37 [command] : [INFO] Вызываем метод commandPause
-08:06:37 [reply] : === Reply sent to 1528600: ===
+            [userMessage] => /тест
+            [commandInProgress:protected] => 
+        )
 
-08:06:37 [reply] : Клиент с номером карты 2020 не найден...
-08:06:37 [reply] : =================================================
-
-08:06:44 [parseCommand] : [INFO] Looking up for commands in text...
-08:06:44 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:06:44 [parseCommand] : === Matches found:: ===
-
-08:06:44 [parseCommand] : Array
-(
-    [0] => 1999
 )
-
-08:06:44 [parseCommand] : =================================================
-
-08:06:44 [connect] : [ERROR] Connection failed: Access denied for user 'admin_bezpravil'@'tansultant.ru' (using password: YES)
-08:06:44 [command] : [INFO] Вызываем метод commandPause
-08:06:44 [reply] : === Reply sent to 1528600: ===
-
-08:06:44 [reply] : Клиент с номером карты 1999 не найден...
-08:06:44 [reply] : =================================================
-
-08:07:19 [parseCommand] : [INFO] Looking up for commands in text...
-08:07:19 [parseCommand] : [INFO] Testing message `замор 2020` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:07:19 [parseCommand] : [INFO] Testing message `замор 2020` on regular exp `/^(abc).*$/i` for command `test`
-08:07:19 [reply] : === Reply sent to 1528600: ===
-
-08:07:19 [reply] : замор 2020
-08:07:19 [reply] : =================================================
 
-08:07:32 [parseCommand] : [INFO] Looking up for commands in text...
-08:07:32 [parseCommand] : [INFO] Testing message `заморо 2020` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:07:32 [parseCommand] : [INFO] Testing message `заморо 2020` on regular exp `/^(abc).*$/i` for command `test`
-08:07:32 [reply] : === Reply sent to 1528600: ===
+10:59:37 [__construct] : =================================================
 
-08:07:32 [reply] : заморо 2020
-08:07:32 [reply] : =================================================
+10:59:37 [executeCommand] : === RomanBots\Commands\HoldCommand: ===
 
-08:07:33 [parseCommand] : [INFO] Looking up for commands in text...
-08:07:33 [parseCommand] : [INFO] Testing message `Заморозь 1999` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:07:33 [parseCommand] : === Matches found:: ===
-
-08:07:33 [parseCommand] : Array
+10:59:37 [executeCommand] : RomanBots\Commands\HoldCommand Object
 (
-    [0] => 1999
-)
-
-08:07:33 [parseCommand] : =================================================
-
-08:07:33 [connect] : [ERROR] Connection failed: Access denied for user 'admin_bezpravil'@'tansultant.ru' (using password: YES)
-08:07:33 [command] : [INFO] Вызываем метод commandPause
-08:07:33 [reply] : === Reply sent to 1528600: ===
+    [regexp:protected] => заморо\S+\D*(\d+)\D*
+    [user:protected] => stdClass Object
+        (
+            [id] => 1528600
+            [first_name] => Roman
+            [last_name] => Dots
+        )
 
-08:07:33 [reply] : Клиент с номером карты 1999 не найден...
-08:07:33 [reply] : =================================================
+    [originalMessage:protected] => /тест
+    [command:protected] => 
+    [params:protected] => 
+    [bot:protected] => RomanBots\Bot\Bot Object
+        (
+            [vkApiToken:protected] => 2a4f020ca3ac6b989d51bf54125323155899debd21c24c12a403a3b7060caa571f23056a7e36a29e52c61
+            [vkCommunityConfirmationCode:protected] => b1d8183d
+            [vkSecret:protected] => zYbOYnxeVflOYEccTccq
+            [userId] => 1528600
+            [userData] => stdClass Object
+                (
+                    [id] => 1528600
+                    [first_name] => Roman
+                    [last_name] => Dots
+                )
 
-08:07:41 [parseCommand] : [INFO] Looking up for commands in text...
-08:07:41 [parseCommand] : [INFO] Testing message `заморо 2020` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:07:41 [parseCommand] : [INFO] Testing message `заморо 2020` on regular exp `/^(abc).*$/i` for command `test`
-08:07:41 [reply] : === Reply sent to 1528600: ===
+            [userMessage] => /тест
+            [commandInProgress:protected] => 
+        )
 
-08:07:41 [reply] : заморо 2020
-08:07:41 [reply] : =================================================
-
-08:07:46 [parseCommand] : [INFO] Looking up for commands in text...
-08:07:46 [parseCommand] : [INFO] Testing message `заморозка 2020` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command `pause`
-08:07:46 [parseCommand] : === Matches found:: ===
-
-08:07:46 [parseCommand] : Array
-(
-    [0] => 2020
 )
-
-08:07:46 [parseCommand] : =================================================
-
-08:07:46 [connect] : [ERROR] Connection failed: Access denied for user 'admin_bezpravil'@'tansultant.ru' (using password: YES)
-08:07:46 [command] : [INFO] Вызываем метод commandPause
-08:07:46 [reply] : === Reply sent to 1528600: ===
 
-08:07:46 [reply] : Клиент с номером карты 2020 не найден...
-08:07:46 [reply] : =================================================
+10:59:37 [executeCommand] : =================================================
 
+10:59:37 [match] : [INFO] Testing message `/тест` on regular exp `/^заморо\S+\D*(\d+)\D*$/i` for command ``

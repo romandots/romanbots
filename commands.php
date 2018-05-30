@@ -1,6 +1,5 @@
 <?php
 return [
-	"pause" => "заморо\S+\D*(\d+)\D*",
-	"test" => "(abc).*",
-
+	"RomanBots\Commands\TestCommand",
+	"RomanBots\Commands\HoldCommand"
 ];

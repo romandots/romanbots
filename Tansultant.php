@@ -1,5 +1,6 @@
 <?php
 
+namespace RomanBots;
 
 class Tansultant {
 
@@ -33,24 +34,6 @@ class Tansultant {
 		}
 		$this->db->close();
 		return $clients;
-	}
-
-
-	/**
-	 * @param $command string Command Name
-	 * @param $params array Command Parameters
-	 * @param $userData object Sender info
-	 * @return string Reply text
-	 */
-	static function command($command, $params, $userData){
-		$tansultant = new Tansultant();
-		$method = "command".mb_convert_case($command, MB_CASE_TITLE);
-		if(method_exists($tansultant, $method)){
-			log_msg("Вызываем метод $method");
-			return $tansultant->$method($userData, ...$params);
-		} else {
-			return "Команда не найдена.";
-		}
 	}
 
 
