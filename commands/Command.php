@@ -6,8 +6,9 @@ abstract class Command {
 	protected $user;
 	protected $originalMessage;
 	protected $command;
-	protected $params;
+	protected $params = [];
 	protected $regexp;
+
 	protected $bot; //caller bot instance
 
 
@@ -28,17 +29,43 @@ abstract class Command {
 
 
 	/**
+	 * Magic getter pulls properties
+	 * from params array
+	 * @param $name
+	 * @return mixed
+	 */
+	public function __get($name){
+		if (!property_exists( $this, $name) && array_key_exists($name, $this->params)) {
+			return $this->params[$name];
+		} else {
+			return $this->$name;
+		}
+	}
+
+
+	/**
 	 * Check if user message matches the command syntax
 	 * @return bool
 	 */
 	public function match(){
-		log_msg("Testing message `$this->originalMessage` on regular exp `/^$this->regexp$/i` for command `$this->command`");
-		if(preg_match("/^".COMMAND_PREFIX.$this->regexp."$/i", mb_strtolower($this->originalMessage),$this->params)){
-			array_shift($this->params);
-			debug($this->params, "Params found:");
+		log_msg("Testing message `$this->originalMessage` on regular exp `/^".COMMAND_PREFIX.$this->regexp."$/ui` for command `$this->command`");
+		if(preg_match("/^".COMMAND_PREFIX.$this->regexp."$/ui", mb_strtolower($this->originalMessage),$matches)){
+			array_shift($matches);
+			$this->assignParameters($matches);
 			return true;
 		}
 		return false;
+	}
+
+
+	public function assignParameters($params){
+		debug($params, "Parameters received:");
+		$assignedParams = [];
+		foreach ($this->params as $parameter){
+			$assignedParams[$parameter] = current($params);
+		}
+		debug($assignedParams, "Parameters assigned:");
+		$this->params = $assignedParams;
 	}
 
 
