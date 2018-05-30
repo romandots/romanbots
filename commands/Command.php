@@ -2,13 +2,13 @@
 namespace RomanBots\Commands;
 
 abstract class Command {
-
-	protected $user;
-	protected $originalMessage;
 	protected $command;
 	protected $params = [];
 	protected $regexp;
+	protected $help;
 
+	protected $user;
+	protected $originalMessage;
 	protected $bot; //caller bot instance
 
 
@@ -44,6 +44,13 @@ abstract class Command {
 
 
 	/**
+	 * This is where all the action is going on
+	 * Must call error()/finish() in the end
+	 */
+	abstract function action( );
+
+
+	/**
 	 * Check if user message matches the command syntax
 	 * @return bool
 	 */
@@ -58,6 +65,10 @@ abstract class Command {
 	}
 
 
+	/**
+	 * Assign params from command to model
+	 * @param $params
+	 */
 	public function assignParameters($params){
 		debug($params, "Parameters received:");
 		$assignedParams = [];
@@ -69,9 +80,9 @@ abstract class Command {
 	}
 
 
-	abstract function action( );
-
-
+	/**
+	 * Execute the command
+	 */
 	public function execute( ){
 		log_msg("Executing command `$this->command` for message `$this->originalMessage`");
 		$this->bot->startCommandFlow($this->command);
@@ -79,12 +90,20 @@ abstract class Command {
 	}
 
 
+	/**
+	 * Finalize the command
+	 * @param $message
+	 */
 	public function finish($message){
 		$this->output($message);
 		$this->bot->endCommandFlow();
 	}
 
 
+	/**
+	 * Output an error
+	 * @param $error
+	 */
 	public function error( $error ){
 		$this->output("Ошибка: ".$error);
 		$this->bot->endCommandFlow();
@@ -111,6 +130,11 @@ abstract class Command {
 	public function prompt( $param, $message ){	}
 
 
+	/**
+	 * Basic output method
+	 * returns message to user
+	 * @param $message
+	 */
 	public function output($message){
 		$this->bot->reply($message);
 	}
