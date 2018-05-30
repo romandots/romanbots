@@ -1,5 +1,7 @@
 <?php
 
+require_once "lib/Redis.php";
+
 function debug($var, $comment = ''){
 	if($comment){
 		_log_write("=== $comment: ===\n");

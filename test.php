@@ -1,4 +1,6 @@
-<?php
+<pre><?php
+require_once "autoload.php";
 
-var_dump(preg_match("/^(заморо\S+)\D*(\d+)/i", "заморозь 124, ром", $matches));
-var_dump($matches);
+redis_set('123:command', "holdit");
+var_dump(redis_get('123:command'));
+?></pre>
