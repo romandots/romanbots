@@ -8,6 +8,8 @@
 
 namespace RomanBots\Bot;
 
+use RomanBots\Commands\Command;
+
 trait BotCommands {
 
 	/**
@@ -18,15 +20,12 @@ trait BotCommands {
 		log_msg("Execute command...");
 		try{
 			$commands = include BOT_BASE_DIRECTORY."/commands.php";
-			debug($commands, "Loaded commands:");
+			log_msg("Loading commands...");
 
 			// Get every command from config file
 			// and check if it matches
 			// execute when found
-			foreach ($commands as $commandClass ){
-				/** @var Command $command */
-				$command = new $commandClass( $this->userData, $this->userMessage, $this);
-				debug($command, $commandClass);
+			foreach (Command::all() as $command ){
 				if($command->match()){
 					$command->execute();
 					break;
@@ -34,7 +33,7 @@ trait BotCommands {
 			}
 
 		} catch (\Exception $e) {
-			log_error('Cannot execute the command '.$command.': '.$e);
+			log_error('Cannot execute the command: '.$e);
 			die('Cannot execute the command');
 		}
 	}
