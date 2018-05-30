@@ -1,0 +1,6 @@
+composer.lock
+.idea
+t.php
+vendor
+build
+*.phar

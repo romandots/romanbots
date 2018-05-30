@@ -1,0 +1,20 @@
+{
+  "name": "romandots/vkbot",
+  "authors": [
+    {
+      "name": "romandots",
+      "email": "ram.d.kreiz@gmail.com"
+    }
+  ],
+  "require": {
+    "zloesabo/speechkit-php": "^2.0"
+  },
+  "autoload": {
+    "files": [
+      "global.php",
+      "config.php",
+      "Tansultant.php",
+      "Bot.php"
+    ]
+  }
+}

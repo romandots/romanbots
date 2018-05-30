@@ -1,0 +1,28 @@
+{
+    "name": "zloesabo/speechkit-php",
+    "description": "Yandex SpeechKit for PHP",
+    "keywords": ["speechkit", "yandex"],
+    "authors": [
+        {
+            "name": "Evgeny Soynov",
+            "email": "saboteur@saboteur.me"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "ext-simplexml": "*",
+        "guzzlehttp/psr7": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "SpeechKit\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0",
+        "henrikbjorn/phpspec-code-coverage": "dev-master"
+    }
+}
