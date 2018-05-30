@@ -6,7 +6,7 @@ use RomanBots\Commands\Command;
 
 class Bot {
 
-	use BotHandleEvents, BotCommands, BotHandlesAttachments;
+	use BotHandleEvents, BotCommands, BotHandlesAttachments, BotChats;
 
 	protected $vkApiToken;
 	protected $vkCommunityConfirmationCode;
@@ -20,15 +20,15 @@ class Bot {
 	const BOT_AUDIO_DIRECTORY = BOT_AUDIO_DIRECTORY;
 	const BOT_VOICE_DIRECTORY = BOT_VOICE_DIRECTORY;
 
-	public $userId;
-	public $userData;
+	public $user;
 	public $userMessage;
-	protected $commandInProgress;
+
 
 	/**
 	 * Bot constructor.
-	 * @param $vkApiToken
-	 * @param $vkCommunityConfirmationCode
+	 * @param      $vkApiToken
+	 * @param      $vkCommunityConfirmationCode
+	 * @param null $vkSecret
 	 */
 	public function __construct( $vkApiToken, $vkCommunityConfirmationCode, $vkSecret = null )
 	{
@@ -50,86 +50,6 @@ class Bot {
 	}
 
 
-
-
-
-	/**
-	 * @param $message object
-	 * @return mixed object
-	 */
-	protected function getSenderData($message){
-		//затем с помощью users.get получаем данные об авторе
-		$this->userId = $message->user_id;
-		$method = "https://api.vk.com/method/users.get?user_ids={$message->user_id}&access_token={$this->vkApiToken}&v=5.0";
-		if($callback = json_decode( file_get_contents( $method ))) {
-			$this->userData = $callback->response[0];
-			$this->userData->id = $this->userId;
-			return $this->userData;
-		}
-	}
-
-
-	/**
-	 * Send reply back to the user
-	 * @param $message string Message or format string for printf
-	 * @param mixed Any number of parameters that should be passed
-	 *              to the command
-	 * @return void
-	 */
-	public function reply(){
-		$args = func_get_args();
-		if(!count($args)) {
-			$message = "";
-		} else {
-			$message = array_shift($args);
-			if(count($args) > 1){
-				$message = sprintf($message, ...$args);
-			}
-		}
-		$request_params = array(
-			'message' => $message,
-			'user_id' => $this->userId,
-			'access_token' => $this->vkApiToken,
-			'v' => self::VK_API_VERSION
-		);
-		debug($message, "Reply sent to {$this->userId}");
-
-		$get_params = http_build_query($request_params);
-
-		file_get_contents('https://api.vk.com/method/messages.send?'. $get_params);
-	}
-
-
-	/**
-	 * Reply with personal appeal
-	 * @param $message
-	 * @param $userData
-	 * @return void
-	 */
-	public function replyPersonally($message, $userData)
-	{
-		if(!empty($userData) && !empty($userData->first_name)) {
-			$appeal = ", ".$userData->first_name;
-			$message = preg_replace("/(.*\b)(\W+)$/u", "$1{$appeal}$2", $message);
-		}
-		$this->reply($message);
-	}
-
-
-	/**
-	 * Randomly add personal appeal to reply
-	 * @param $message
-	 * @param $userData
-	 * @return void
-	 */
-	public function replyRandomly($message, $userData){
-		if( rand(0,1) )
-		{
-			$this->reply( $message );
-		} else {
-			$this->replyPersonally($message, $userData);
-		}
-	}
 
 	/**
 	 * Send default OK
@@ -159,27 +79,34 @@ class Bot {
 	 * Make all required dirs
 	 * @return void
 	 */
-	private function _mkdir() {
+	private function _mkdir()
+	{
 
-		if(!is_dir(BOT_LOGS_DIRECTORY))
+		try
 		{
-			mkdir( self::BOT_LOGS_DIRECTORY );
-			chmod( self::BOT_LOGS_DIRECTORY, 0777 );
-		}
-		if(!is_dir(BOT_IMAGES_DIRECTORY))
+			if (!is_dir(BOT_LOGS_DIRECTORY))
+			{
+				@mkdir(self::BOT_LOGS_DIRECTORY);
+				@chmod(self::BOT_LOGS_DIRECTORY, 0777);
+			}
+			if (!is_dir(BOT_IMAGES_DIRECTORY))
+			{
+				@mkdir(self::BOT_IMAGES_DIRECTORY);
+				@chmod(self::BOT_IMAGES_DIRECTORY, 0777);
+			}
+			if (!is_dir(BOT_AUDIO_DIRECTORY))
+			{
+				@mkdir(self::BOT_AUDIO_DIRECTORY);
+				@chmod(self::BOT_AUDIO_DIRECTORY, 0777);
+			}
+			if (!is_dir(BOT_VOICE_DIRECTORY))
+			{
+				@mkdir(self::BOT_VOICE_DIRECTORY);
+				@chmod(self::BOT_VOICE_DIRECTORY, 0777);
+			}
+		} catch (\Exception $e)
 		{
-			mkdir( self::BOT_IMAGES_DIRECTORY );
-			chmod( self::BOT_IMAGES_DIRECTORY, 0777 );
-		}
-		if(!is_dir(BOT_AUDIO_DIRECTORY))
-		{
-			mkdir( self::BOT_AUDIO_DIRECTORY );
-			chmod( self::BOT_AUDIO_DIRECTORY, 0777 );
-		}
-		if(!is_dir(BOT_VOICE_DIRECTORY))
-		{
-			mkdir( self::BOT_VOICE_DIRECTORY );
-			chmod( self::BOT_VOICE_DIRECTORY, 0777 );
+			log_error("mkdir failed: " . $e);
 		}
 	}
 
