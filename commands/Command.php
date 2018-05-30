@@ -5,7 +5,7 @@ abstract class Command {
 	protected $command;
 	protected $params = [];
 	protected $regexp;
-	protected $help;
+	protected $help = "Неверно указаны параметры команды";
 
 	protected $user;
 	protected $originalMessage;
@@ -66,6 +66,19 @@ abstract class Command {
 
 
 	/**
+	 * Check if all parameters are set
+	 * @return bool
+	 */
+	public function allParametersSet( ){
+		foreach ($this->params as $param => $value){
+			if (empty($value)) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	/**
 	 * Assign params from command to model
 	 * @param $params
 	 */
@@ -85,6 +98,10 @@ abstract class Command {
 	 */
 	public function execute( ){
 		log_msg("Executing command `$this->command` for message `$this->originalMessage`");
+		if(!$this->allParametersSet()){
+			log_error("Parameters not set correctly");
+			$this->finish($this->help);
+		}
 		$this->bot->startCommandFlow($this->command);
 		$this->action();
 	}
@@ -97,6 +114,7 @@ abstract class Command {
 	public function finish($message){
 		$this->output($message);
 		$this->bot->endCommandFlow();
+		exit();
 	}
 
 
