@@ -1,6 +1,6 @@
 <?php
 
-use RomanBots\Bot\Human;
+use RomanBots\Human\Human;
 
 require_once "lib/Redis.php";
 
@@ -9,23 +9,28 @@ require_once "lib/Redis.php";
  * @param $message string
  */
 function _debug_output($message){
-	$bot = new RomanBots\Bot\Bot(VK_API_ACCESS_TOKEN, CALLBACK_API_CONFIRMATION_TOKEN, VK_API_SECRET);
-	$bot->user = Human::load(TESTER_UID);
-	$bot->reply($message."\n\n");
+	// $bot = new RomanBots\VkBot\VkBot();
+	// $bot->human = Human::fromVk( TESTER_UID);
+	// $bot->reply($message."\n\n");
 }
 
 function _debug_log($message){
 	$trace = debug_backtrace();
 	$function_name = isset($trace[2]) ? $trace[2]['function'] : '-';
 	$mark = date("H:i:s") . ' [' . $function_name . ']';
-	$log_name = BOT_LOGS_DIRECTORY.'/log_' . date("j.n.Y") . '.txt';
-	file_put_contents($log_name, $mark . " : " . $message . "\n\n", FILE_APPEND);
+	if(!is_dir(BOT_BASE_DIRECTORY.'/logs')){
+		@mkdir(BOT_BASE_DIRECTORY.'/logs');
+		@chmod( BOT_BASE_DIRECTORY.'/logs', 0777);
+	}
+	$log_name = BOT_BASE_DIRECTORY.'/logs/' . date("Y-M-D") . '.txt';
+	@file_put_contents($log_name, $mark . " : " . $message . "\n\n", FILE_APPEND);
 }
 
 function _debug($message){
-	if(DEBUG){
+	if(DEBUG && TESTER_UID){
 		_debug_output($message);
-	} else {
+	}
+	if(LOG){
 		_debug_log($message);
 	}
 }
@@ -54,4 +59,9 @@ function log_error($message) {
   }
 
 	_debug('[ERROR] ' . $message);
+}
+
+function fatal($message){
+	log_error($message);
+	die('ok');
 }

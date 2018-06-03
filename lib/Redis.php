@@ -3,7 +3,8 @@ require __DIR__.'/../vendor/colinmollenhour/credis/Client.php';
 
 if(!function_exists("redis")){
 	function redis(){
-		return new \Credis_Client('127.0.0.1');
+
+		return new \Credis_Client( REDIS_HOST, REDIS_PORT );
 	}
 }
 if(!function_exists("redis_set")){

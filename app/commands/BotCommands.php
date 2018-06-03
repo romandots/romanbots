@@ -6,7 +6,7 @@
  * Time: 10:39
  */
 
-namespace RomanBots\Bot;
+namespace RomanBots\VkBot;
 
 use RomanBots\Commands\Command;
 
@@ -26,8 +26,8 @@ trait BotCommands {
 		$key = $this->human->vk_uid.":subscribed";
 		if($subscription = redis_get($key)){
 			list($command, $param) = explode(":", $subscription);
-			$command = Command::load($command, $this->userMessage, $this);
-			$command->setParam($param, $this->userMessage);
+			$command = Command::load( $command, $this->chatMessage, $this);
+			$command->setParam($param, $this->chatMessage);
 			$command->execute();
 		}
 
@@ -64,10 +64,10 @@ trait BotCommands {
 	 * @return bool|string Command name
 	 */
 	public function isCommand(){
-		log_msg("Check if the message `{$this->userMessage}` is command...");
+		log_msg("Check if the message `{$this->chatMessage}` is command...");
 		if( empty(COMMAND_PREFIX) ){
 			return true;
-		} elseif($this->_extractCommandName($this->userMessage)){
+		} elseif($this->_extractCommandName($this->chatMessage)){
 				log_msg("...true");
 				return true;
 		} else	{

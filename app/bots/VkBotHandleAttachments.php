@@ -1,15 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * Human: romandots
- * Date: 30.05.2018
- * Time: 19:43
- */
+namespace RomanBots\Bots;
 
-namespace RomanBots\Bot;
-
-
-trait BotHandlesAttachments {
+trait VkBotHandleAttachments {
 
 
 	/**

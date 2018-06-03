@@ -1,10 +1,11 @@
 <?php
 require "autoload.php";
 
+use RomanBots\Bots\VkBot;
 
-use RomanBots\Bot\Bot;
 
-debug("a", "b");
+log_msg("######################## STARTING ########################");
 
-$bot = new Bot(VK_API_ACCESS_TOKEN, CALLBACK_API_CONFIRMATION_TOKEN, VK_API_SECRET);
+
+$bot = new VkBot();
 $bot->listen();

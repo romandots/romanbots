@@ -16,7 +16,7 @@ abstract class Command {
 	 * Command constructor.
 	 * @param $human            object Human data
 	 * @param $originalMessage string Full message from user
-	 * @param $bot \RomanBots\Bot\Bot Bot Class Instance (caller)
+	 * @param $bot \RomanBots\VkBot\VkBot VkBot Class Instance (caller)
 	 */
 	public function __construct( $human, $originalMessage, &$bot )
 	{
@@ -189,7 +189,7 @@ abstract class Command {
 	 * @return Command
 	 */
 	public function output($message){
-		$this->bot->reply($message);
+		$this->bot->send( $message);
 		return $this;
 	}
 

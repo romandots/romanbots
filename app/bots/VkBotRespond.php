@@ -6,10 +6,10 @@
  * Time: 20:52
  */
 
-namespace RomanBots\Bot;
+namespace RomanBots\Bots;
 
 
-trait BotChats {
+trait VkBotRespond {
 
 	/**
 	 * Keep conversation alive
@@ -25,9 +25,9 @@ trait BotChats {
 	 * @param $message string Message or format string for printf
 	 * @param mixed Any number of parameters that should be passed
 	 *              to the command
-	 * @return void
+	 * @return object VkBot
 	 */
-	public function reply(){
+	public function send(){
 		if(!$this->human || !$this->human->vk_uid){
 			return;
 		}
@@ -40,18 +40,10 @@ trait BotChats {
 				$message = sprintf($message, ...$args);
 			}
 		}
-		// undefined $this->human->vk_uid,
-		$request_params = array(
-			'message' => $message.$this->human->vk_uid,
-			'user_id' => $this->human->vk_uid,
-			'access_token' => $this->vkApiToken,
-			'v' => self::VK_API_VERSION
-		);
-		debug($message, "Reply sent to {$this->human->vk_uid}:{$this->human->last_name}");
 
-		$get_params = http_build_query($request_params);
-
-		file_get_contents('https://api.vk.com/method/messages.send?'. $get_params);
+		// Send chat message via VkApi
+		$this->vkApi->message($this->human, $message);
+		return $this;
 	}
 
 
@@ -60,28 +52,48 @@ trait BotChats {
 	 * @param $message
 	 * @return void
 	 */
-	public function replyPersonally($message)
+	public function reply($message)
 	{
 		if(!empty($this->human) && !empty($this->human->first_name)) {
 			$appeal = ", ".$this->human->first_name;
 			$message = preg_replace("/(.*\b)(\W+)$/u", "$1{$appeal}$2", $message);
 		}
-		$this->reply($message);
+		$this->send( $message);
+	}
+
+	/**
+	 * Return secret token
+	 * when VK asks
+	 * for authorization
+	 */
+	public function handleVkConfirmation()
+	{
+		log_msg("CONFIRMATION CODE: {$this->vkCommunityConfirmationCode}");
+		$this->_response( $this->vkCommunityConfirmationCode );
+	}
+
+	/**
+	 * Send default OK
+	 * to VK server
+	 * @return void
+	 */
+	protected function ok()
+	{
+		log_msg("Returning OK. So all the further output will be logged.");
+		$this->_response( 'ok' );
+		ob_start();
 	}
 
 
 	/**
-	 * Randomly add personal appeal to reply
-	 * @param $message
-	 * @return void
+	 * Return response back
+	 * to VK server
+	 * @param $data mixed
 	 */
-	public function replyRandomly($message){
-		if( rand(0,1) )
-		{
-			$this->reply( $message );
-		} else {
-			$this->replyPersonally($message);
-		}
+	protected function _response( $data )
+	{
+		header("HTTP/1.1 200 OK");
+		echo $data;
 	}
 
 }

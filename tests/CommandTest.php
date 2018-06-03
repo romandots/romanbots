@@ -3,13 +3,13 @@ declare(strict_types=1);
 
 namespace RomanBots\tests;
 use PHPUnit\Framework\TestCase;
-use RomanBots\Bot\Bot;
+use RomanBots\VkBot\VkBot;
 use RomanBots\Commands\Command;
 
 final class CommandTest extends TestCase {
 
 	private function bot(){
-		return new Bot( VK_API_ACCESS_TOKEN, CALLBACK_API_CONFIRMATION_TOKEN, VK_API_SECRET);
+		return new VkBot( VK_API_ACCESS_TOKEN, CALLBACK_API_CONFIRMATION_TOKEN, VK_API_SECRET);
 	}
 
 	private function userData(){
