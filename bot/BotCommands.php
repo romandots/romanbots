@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: romandots
+ * Human: romandots
  * Date: 30.05.2018
  * Time: 10:39
  */
@@ -11,6 +11,27 @@ namespace RomanBots\Bot;
 use RomanBots\Commands\Command;
 
 trait BotCommands {
+
+
+	public function waitForInput($command, $param){
+		log_msg("Subscribe and wait for input of `$param`");
+		$key = $this->human->vk_uid.":subscribed";
+		$value = $command.":".$this->$param;
+		redis_set($key, $value);
+		return $this;
+	}
+
+
+	public function continueWithInput($command, $param){
+		$key = $this->human->vk_uid.":subscribed";
+		if($subscription = redis_get($key)){
+			list($command, $param) = explode(":", $subscription);
+			$command = Command::load($command, $this->userMessage, $this);
+			$command->setParam($param, $this->userMessage);
+			$command->execute();
+		}
+
+	}
 
 	/**
 	 * Load command in execute it
@@ -44,31 +65,16 @@ trait BotCommands {
 	 */
 	public function isCommand(){
 		log_msg("Check if the message `{$this->userMessage}` is command...");
-		if($this->_extractCommandName($this->userMessage)){
-			log_msg("...true");
+		if( empty(COMMAND_PREFIX) ){
 			return true;
+		} elseif($this->_extractCommandName($this->userMessage)){
+				log_msg("...true");
+				return true;
 		} else	{
 			log_msg("...false");
 			return false;
 		}
 	}
-
-	/**
-	 * Sets current working command
-	 * @param $commandName string
-	 */
-	public function startCommandFlow($commandName){
-		$this->commandInProgress = $commandName;
-	}
-
-	/**
-	 * Sets current working command to null
-	 */
-	public function endCommandFlow(){
-		$this->commandInProgress = null;
-	}
-
-
 
 	/**
 	 * Find command name is string

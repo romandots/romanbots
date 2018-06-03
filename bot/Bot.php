@@ -20,7 +20,7 @@ class Bot {
 	const BOT_AUDIO_DIRECTORY = BOT_AUDIO_DIRECTORY;
 	const BOT_VOICE_DIRECTORY = BOT_VOICE_DIRECTORY;
 
-	public $user;
+	public $human;
 	public $userMessage;
 
 
@@ -41,15 +41,59 @@ class Bot {
 
 	/**
 	 * Listen for incoming events
+	 * This is where it begins...
 	 * @return void
 	 */
 	public function listen()
 	{
+		// hook up with vk server and
+		// listen what it says
 		$data = $this->_getInput();
+		// what ever it says
+		// handle this
 		$this->handleEvent( $data );
 	}
 
+	/**
+	 * Handle incoming callback event
+	 * @link  https://vk.com/dev/callback_api
+	 * @param $event object
+	 */
+	public function handleEvent( $event )
+	{
+		if(!is_object($event)){
+			die("Event must be object");
+		}
+		if(!property_exists($event, "type")){
+			die("No event type set");
+		}
+		try
+		{
+//			debug($event->type, "Event dispatched:");
+			switch ( $event->type )
+			{
+				//Подтверждение сервера
+				case 'confirmation':
+					$this->handleConfirmation();
+					break;
 
+				//Получение нового сообщения
+				case 'message_new':
+					$this->messageReceived($event->object);
+					break;
+
+				default:
+			}
+			// Return OK message so VK
+			// won't bother us with the same
+			// messages anymore
+			$this->ok();
+			exit();
+		} catch ( Exception $e )
+		{
+			log_error( $e );
+		}
+	}
 
 	/**
 	 * Send default OK
@@ -74,6 +118,11 @@ class Bot {
 		exit();
 	}
 
+
+	public function setUserById(){
+
+
+	}
 
 	/**
 	 * Make all required dirs

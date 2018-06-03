@@ -22,13 +22,13 @@ final class CommandTest extends TestCase {
 
 	public function testCommandAllReturnsArray()
 	{
-		$this->assertInternalType("array", Command::list());
+		$this->assertInternalType("array", Command::all());
 	}
 
 	public function testEveryCommandIsInstanceOfCommand()
 	{
 		$bot = $this->bot();
-		foreach (Command::list() as $commandClass)
+		foreach (Command::all() as $commandClass)
 		{
 			$command = new $commandClass($this->userData(), "", $bot);
 			$this->assertInstanceOf(

@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: romandots
+ * Human: romandots
  * Date: 30.05.2018
  * Time: 19:43
  */

@@ -8,7 +8,8 @@
   ],
   "require": {
     "zloesabo/speechkit-php": "^2.0",
-    "colinmollenhour/credis": "*"
+    "colinmollenhour/credis": "*",
+    "google/cloud-dialogflow": "^0.2.1"
   },
   "autoload": {
     "psr-4": {

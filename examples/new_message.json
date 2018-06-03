@@ -1,0 +1,14 @@
+{
+  "type": "message_new",
+  "object": {
+    "id": 712,
+    "date": 1527884373,
+    "out": 0,
+    "user_id": 1528600,
+    "read_state": 0,
+    "title": "",
+    "body": "Привет"
+  },
+  "group_id": 161641276,
+  "secret": "zYbOYnxeVflOYEccTccq"
+}

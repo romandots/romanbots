@@ -1,4 +1,7 @@
 <?php
+const DEBUG = false;
+const TESTER_UID = "";
+
 //Строка для подтверждения адреса сервера из настроек Callback API
 const CALLBACK_API_CONFIRMATION_TOKEN = 'b1d8183d';
 

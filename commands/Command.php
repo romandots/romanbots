@@ -7,23 +7,24 @@ abstract class Command {
 	protected $regexp;
 	protected $help = "Неверно указаны параметры команды";
 
-	protected $user;
+	protected $human;
 	protected $originalMessage;
 	protected $bot; //caller bot instance
 
 
 	/**
 	 * Command constructor.
-	 * @param $user            object User data
+	 * @param $human            object Human data
 	 * @param $originalMessage string Full message from user
 	 * @param $bot \RomanBots\Bot\Bot Bot Class Instance (caller)
 	 */
-	public function __construct( $user, $originalMessage, &$bot )
+	public function __construct( $human, $originalMessage, &$bot )
 	{
 		log_msg("Command {$this->command} Class called...");
-		$this->user    = $user;
 		$this->originalMessage  = $originalMessage;
+		$this->human    = $human;
 		$this->bot  = $bot;
+		$this->loadSession();
 		debug($this, $this->command);
 	}
 
@@ -39,6 +40,35 @@ abstract class Command {
 			return $this->params[$name];
 		} else {
 			return $this->$name;
+		}
+	}
+
+
+	public function setParam($param, $value){
+
+		$this->params[$param] = $value;
+		$this->saveSession();
+		debug($this->params, "Params updated:");
+	}
+
+	protected function _sessionName($param = ''){
+		return sprintf('%s:%s:%s',
+		               $this->user->id,
+		               $this->command,
+		               $param);
+	}
+
+	public function resetSession(){
+		redis_set($this->_sessionName(), json_encode([]));
+	}
+
+	public function saveSession(){
+		redis_set($this->_sessionName(), json_encode($this->params));
+	}
+
+	public function loadSession(){
+		if($json = redis_get($this->_sessionName())) {
+			$this->params = json_decode($json);
 		}
 	}
 
@@ -98,11 +128,6 @@ abstract class Command {
 	 */
 	public function execute( ){
 		log_msg("Executing command `$this->command` for message `$this->originalMessage`");
-		if(!$this->allParametersSet()){
-			log_error("Parameters not set correctly");
-			$this->finish($this->help);
-		}
-		$this->bot->startCommandFlow($this->command);
 		$this->action();
 	}
 
@@ -113,7 +138,6 @@ abstract class Command {
 	 */
 	public function finish($message){
 		$this->output($message);
-		$this->bot->endCommandFlow();
 		exit();
 	}
 
@@ -124,7 +148,6 @@ abstract class Command {
 	 */
 	public function error( $error ){
 		$this->output("Ошибка: ".$error);
-		$this->bot->endCommandFlow();
 	}
 
 
@@ -141,20 +164,33 @@ abstract class Command {
 
 
 	/**
-	 * @todo
+	 * Request the input
+	 * and assign it to param
 	 * @param $param
 	 * @param $message
 	 */
-	public function prompt( $param, $message ){	}
+	public function prompt( $param, $message ){
+		// save current state
+		$this->saveSession();
+		// subscribe for answer
+		// when next message from
+		// user is received it will
+		// be recorded to $param
+		$this->bot->waitForInput($this->command, $param);
+		// ask the question
+		$this->output($message);
+	}
 
 
 	/**
 	 * Basic output method
 	 * returns message to user
 	 * @param $message
+	 * @return Command
 	 */
 	public function output($message){
 		$this->bot->reply($message);
+		return $this;
 	}
 
 
@@ -162,10 +198,26 @@ abstract class Command {
 	 * Get list of active commands classes
 	 * @return array
 	 */
-	static function list(){
+	static function all(){
 		return include BOT_BASE_DIRECTORY."/commands.php";
 	}
 
+
+	/**
+	 * Load Command Class by it's name
+	 * @param $command
+	 * @param $bot
+	 * @return mixed
+	 */
+	static function load($command, &$bot){
+		$commandClass = mb_convert_case($command, MB_CASE_TITLE)."Command";
+		try
+		{
+			return new $commandClass($bot->user, $bot->userMessage, $bot);
+		} catch (\Exception $e){
+			log_error($e);
+		}
+	}
 
 
 }

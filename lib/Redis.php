@@ -16,3 +16,8 @@ if(!function_exists("redis_get")){
 		return redis()->get($key);
 	}
 }
+if(!function_exists("redis_del")){
+	function redis_del($key){
+		return redis()->del($key);
+	}
+}
