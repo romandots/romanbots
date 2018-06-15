@@ -41,10 +41,11 @@ class VkApi {
 
 	/**
 	 * Send reply back to the human
-	 * @param Human $human
+	 * @param Human  $human
 	 * @param string $message     Message
-	 * @param array $attachments (optional) Attachments
+	 * @param array  $attachments (optional) Attachments
 	 * @return object VkApi
+	 * @throws \GuzzleHttp\Exception\GuzzleException
 	 */
 	public function message(Human $human, $message, $attachments = null){
 		if(!$human || !$human->vk_uid){
@@ -56,17 +57,14 @@ class VkApi {
 			'access_token' => $this->vkApiToken,
 			'v' => self::VK_API_VERSION
 		);
+		$get_params = http_build_query($request_params);
 		if( !$attachments && is_array($attachments) ) {
 			$request_params['attachments'] = $attachments;
 		}
 		debug($request_params, "Sending message to {$human->vk_uid}:{$human->last_name} via VkApi:");
 
-
-		// $this->client->get('messages.send', $request_params);
-
-		$get_params = http_build_query($request_params);
-		//
-		file_get_contents('https://api.vk.com/method/messages.send?'. $get_params);
+		$client = new Client();
+		$client->request('GET', 'https://api.vk.com/method/messages.send?'. $get_params);
 		return $this;
 	}
 
