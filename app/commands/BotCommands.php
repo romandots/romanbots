@@ -40,7 +40,7 @@ trait BotCommands {
 	public function executeCommand(){
 		log_msg("Execute command...");
 		try{
-			$commands = include BOT_BASE_DIRECTORY."/commands.php";
+			$commands = include BASE_DIR."/commands.php";
 			log_msg("Loading commands...");
 
 			// Get every command from config file

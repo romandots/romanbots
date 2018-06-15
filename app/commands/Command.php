@@ -199,7 +199,7 @@ abstract class Command {
 	 * @return array
 	 */
 	static function all(){
-		return include BOT_BASE_DIRECTORY."/commands.php";
+		return include BASE_DIR."/commands.php";
 	}
 
 
