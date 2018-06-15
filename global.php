@@ -32,7 +32,7 @@ function _debug($message){
 		if(TESTER_UID){
 			_debug_output($message);
 		}
-		dump($message);
+		// dump($message);
 	}
 	if(LOG){
 		_debug_log($message);
@@ -44,7 +44,7 @@ function dump($var, $comment = ''){
 		echo  "<h4>$comment</h4>";
 	}
 	echo  "<pre>";
-	var_dump($var);
+	print_r($var);
 	echo  "</pre>";
 }
 
@@ -111,10 +111,10 @@ function config($var, $default = null) {
 		{
 			$config = include($filename);
 			$data = _config_get_data($config, $path, $default);
-			debug($data, "Loading config var: $var");
+			// debug($data, "Loading config var: $var");
 			return $data;
 		}
 	}
-	debug($default, "Loading config var: $var - failed, returning default value:");
+	// debug($default, "Loading config var: $var - failed, returning default value:");
 	return $default;
 }
