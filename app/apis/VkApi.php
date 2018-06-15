@@ -1,6 +1,7 @@
 <?php
 namespace RomanBots\API;
 
+use GuzzleHttp\Client;
 use RomanBots\Bots\Human;
 
 class VkApi {
@@ -8,15 +9,33 @@ class VkApi {
 	const VK_API_VERSION = '5.0';
 
 	protected $vkApiToken;
+	protected $client;
 
 	/**
 	 * VkApi constructor.
-	 * @param      $vkApiToken
 	 */
-	public function __construct( $vkApiToken = null )
+	public function __construct()
 	{
-		$this->vkApiToken  = $vkApiToken ?: VK_API_ACCESS_TOKEN;
-		debug($this,"VkApi instance created:");
+		$this->vkApiToken  =  config( 'vk.api_access_token' );
+		$this->_guzzle();
+		// debug($this,"VkApi instance created:");
+	}
+
+	/**
+	 * Init Guzzle client
+	 */
+	protected function _guzzle()
+	{
+		$this->client = new Client( [
+			                            'base_uri' => config('vk.api_url'),
+			                            'timeout' => 2.0,
+			                            // 'debug' => true,
+			                            'headers' => [
+				                            'Accept' => "*/*",
+				                            'Authorization' => 'Bearer ' . config('vk.access_token'),
+				                            'Cache-Control' => "no-cache"
+			                            ]
+		                            ] );
 	}
 
 
@@ -42,8 +61,11 @@ class VkApi {
 		}
 		debug($request_params, "Sending message to {$human->vk_uid}:{$human->last_name} via VkApi:");
 
-		$get_params = http_build_query($request_params);
 
+		// $this->client->get('messages.send', $request_params);
+
+		$get_params = http_build_query($request_params);
+		//
 		file_get_contents('https://api.vk.com/method/messages.send?'. $get_params);
 		return $this;
 	}
