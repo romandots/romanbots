@@ -31,20 +31,20 @@ class DialogFlowBot extends ProtoBot {
 
 
 	/**
-	 * @param string $message
-	 * @param array  $contexts
+	 * @param string      $message
+	 * @param string|null $sessionId
 	 * @return object Response body
 	 */
-	public function query( string $message, array $contexts = null)
+	public function query( string $message, string $sessionId = null)
 	{
 		$data = [
 			'query' => $message,
 			'lang'  => config('dialogflow.language_code'),
 			'timezone'  => config('dialogflow.time_zone'),
-			'sessionId'  => $this->sessionId,
+			'sessionId'  => $sessionId ?: $this->sessionId,
 			'v' => self::PROTOCOL_VERSION
 		];
 		$this->get('query', $data);
-		return $this->response();
+		return $this->response() ?: null;
 	}
 }

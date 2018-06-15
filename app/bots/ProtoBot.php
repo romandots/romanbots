@@ -10,7 +10,7 @@ class ProtoBot {
 	protected $api_secret;
 	protected $access_token;
 	protected $client;
-	protected $sessionId;
+	public $sessionId;
 
 	public $response;
 
@@ -76,11 +76,13 @@ class ProtoBot {
 
 	/**
 	 * Get response body
-	 * @return object Response
+	 * @return object|false Response
 	 */
 	public function response( ){
 		if(is_object($this->response)){
 			return json_decode( (string) $this->response->getBody() );
+		} else {
+			return false;
 		}
 	}
 

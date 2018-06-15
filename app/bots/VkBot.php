@@ -5,13 +5,14 @@ use RomanBots\API\VkApi;
 
 class VkBot extends ProtoBot {
 
-	use VkBotReceive, VkBotRespond, VkBotHandleAttachments;
+	use VkBotEvents, VkBotRespond, VkBotHandleAttachments;
 
 	const API_VERSION = '5.0';
 
 	public $vkApi;
 	public $human;
-	public $chatMessage;
+	public $humanMessage;
+	public $botReply;
 
 
 	/**

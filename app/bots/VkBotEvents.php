@@ -3,7 +3,8 @@ namespace RomanBots\Bots;
 
 use RomanBots\Bots\Human;
 
-trait VkBotReceive {
+trait VkBotEvents {
+	 use DialogFlowConnect;
 
 	/**
 	 * Handle incoming callback event
@@ -65,7 +66,17 @@ trait VkBotReceive {
 		if(!property_exists($message, "body")){
 			fatal('$message->body does not exists');
 		}
-		$this->chatMessage = $message->body;
+		$this->humanMessage = $message->body;
+
+		// 3. Pass the message to Dialogflow
+		$this->toDialogflow($this->humanMessage);
+
+		// 4. Reply to user
+		if($this->botReply){
+			// @todo Placeholders in messages like %FIRST_NAME%, etc.
+			$this->send($this->botReply);
+			exit();
+		}
 
 		// 3. Check if some command is subscribed
 		// for this message (waiting for input)
@@ -82,9 +93,14 @@ trait VkBotReceive {
 		// }
 
 		// 5. If it is not — just chat and act like a human
-		$this->send( '%s написал: %s', $this->human->first_name, $this->chatMessage);
+		$this->send( 'DF не ответил: %s', $this->human->first_name, $this->humanMessage);
 	}
 
-
+	/**
+	 * @todo
+	 *      handleWelcomeEvent - when user joins group
+	 *      handeFarewellEvent - the opposite
+	 *      etc
+	 */
 
 }
