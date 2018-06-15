@@ -61,16 +61,6 @@ trait VkBotRespond {
 		$this->send( $message);
 	}
 
-	/**
-	 * Return secret token
-	 * when VK asks
-	 * for authorization
-	 */
-	public function handleVkConfirmation()
-	{
-		log_msg("CONFIRMATION CODE: {$this->vkCommunityConfirmationCode}");
-		$this->_response( $this->vkCommunityConfirmationCode );
-	}
 
 	/**
 	 * Send default OK
@@ -80,20 +70,9 @@ trait VkBotRespond {
 	protected function ok()
 	{
 		log_msg("Returning OK. So all the further output will be logged.");
-		$this->_response( 'ok' );
+		$this->output( 'ok' );
 		ob_start();
 	}
 
-
-	/**
-	 * Return response back
-	 * to VK server
-	 * @param $data mixed
-	 */
-	protected function _response( $data )
-	{
-		header("HTTP/1.1 200 OK");
-		echo $data;
-	}
 
 }
